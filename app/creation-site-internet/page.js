@@ -1,21 +1,21 @@
-import Head from "next/head";
 import Hero from "../components/Hero/Hero";
 import SectionArguments from "../components/SectionArguments/SectionArguments";
 import SectionCommunication from "../components/SectionCommunication/SectionCommunication";
 import SectionEquipe from "../components/SectionEquipe/SectionEquipe";
+import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
+
+export const metadata = {
+    title: "LIADTECH - Creation Site Internet",
+};
 
 export default function Home() {
     return (
-        <>
-            <Head>
-                <title>LIADTECH - Creation Site Internet</title>
-            </Head>
-            <div>
-                <Hero />
-                <SectionArguments />
-                <SectionCommunication />
-                <SectionEquipe />
-            </div>
-        </>
+        <div>
+            <Hero />
+            <SectionArguments />
+            <SectionCommunication />
+            <SectionEquipe />
+            <SectionSolutions />
+        </div>
     );
 }
