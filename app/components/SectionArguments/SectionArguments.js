@@ -65,7 +65,7 @@ export default function SectionArguments() {
                             Gagnez du temps grâce à une équipe d'experts dédiée à la réalisation de votre projet et à l'atteinte de vos objectifs.
                         </p>
                         <div className="mt-4">
-                            <button className="py-3 px-4 hover:px-5 rounded-[64px] font-extrabold leading-5 flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--purple)] border-2 border-[var(--purple)] w-max">
+                            <button className="py-3 px-4 hover:px-5 rounded-full font-extrabold flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--purple)] border-2 border-[var(--purple)] w-max">
                                 Prendre rendez-vous &nbsp; <FaArrowRight />
                             </button>
                         </div>

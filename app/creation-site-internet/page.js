@@ -2,6 +2,7 @@ import Head from "next/head";
 import Hero from "../components/Hero/Hero";
 import SectionArguments from "../components/SectionArguments/SectionArguments";
 import SectionCommunication from "../components/SectionCommunication/SectionCommunication";
+import SectionEquipe from "../components/SectionEquipe/SectionEquipe";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 <Hero />
                 <SectionArguments />
                 <SectionCommunication />
+                <SectionEquipe />
             </div>
         </>
     );
