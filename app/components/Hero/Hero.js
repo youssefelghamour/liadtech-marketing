@@ -4,7 +4,7 @@ import { FiCalendar } from "react-icons/fi";
 const Hero = () => {
     return (
         <section className="section-hero w-[98%] mx-auto pt-[170px] lg:pt-[220px] rounded-b-2xl relative overflow-hidden bg-[var(--background)]">
-            <div className="container">
+            <div className="px-4">
                 <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] surtitle lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
                     Agence de création de site internet
                 </h1>
