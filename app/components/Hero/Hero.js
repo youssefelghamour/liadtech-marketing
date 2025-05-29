@@ -1,11 +1,11 @@
-import { BsCalendar4 } from "react-icons/bs";
+import { FiCalendar } from "react-icons/fi";
 
 
 const Hero = () => {
     return (
-        <section className="section-hero w-[98%] mx-auto pt-[170px] lg:pt-[220px] rounded-b-2xl relative overflow-hidden px-10">
+        <section className="section-hero w-[98%] mx-auto pt-[170px] lg:pt-[220px] rounded-b-2xl relative overflow-hidden bg-[var(--background)]">
             <div className="container">
-                <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[1vw] surtitle lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
+                <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] surtitle lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
                     Agence de création de site internet
                 </h1>
 
@@ -16,9 +16,9 @@ const Hero = () => {
                     100&nbsp;% personnalisé
                 </h2>
 
-                <p className="text-purple-brand font-medium text-lg md:text-center">
+                <p className="font-medium text-lg lg:text-center">
                     Devenez visible avec un
-                    <a href="#" className="">site internet professionnel</a>
+                    <a href="#" className=""> site internet professionnel </a>
                     conçu par des experts.
                 </p>
             </div>
@@ -30,12 +30,14 @@ const Hero = () => {
                     </button>
                     
                     <button className="hidden md:flex items-center py-3 px-4 hover:px-5 rounded-full font-extrabold text-sm lg:text-base transition-all duration-300 cursor-pointer text-[var(--purple)] bg-transparent border-2 border-[var(--purple)]">
-                        <BsCalendar4 /> &nbsp; Prendre rendez-vous
+                        <FiCalendar size={22}/> &nbsp; Prendre rendez-vous
                     </button>
                 </div>
             </div>
 
-            
+            <picture className="w-full">
+                <img src="/hero-pic.png" alt="hero-pic" className="w-full mt-24"></img>
+            </picture>
         </section>
     );
 }
