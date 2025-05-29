@@ -4,6 +4,7 @@ import SectionCommunication from "../components/SectionCommunication/SectionComm
 import SectionEquipe from "../components/SectionEquipe/SectionEquipe";
 import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
 import SectionSteps from "../components/SectionSteps/SectionSteps";
+import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 
 export const metadata = {
     title: "LIADTECH - Creation Site Internet",
@@ -18,6 +19,7 @@ export default function Home() {
             <SectionEquipe />
             <SectionSolutions />
             <SectionSteps />
+            <SectionFAQ />
         </div>
     );
 }

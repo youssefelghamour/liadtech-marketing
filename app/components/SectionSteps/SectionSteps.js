@@ -13,7 +13,7 @@ export default function SectionSteps() {
                                 La création d'un site web chez Aleo
                             </h2>
                             <p className="text-left text-[40px] max-w-[340px]">
-                                Votre site web en <span className="text-primary-500 font-clash font-bold">5 étapes</span>
+                                Votre site web en <span className="text-[var(--purple)] font-clash tracking-tighter leading-tight font-black">5 étapes</span>
                             </p>
                         </div>
 
