@@ -11,8 +11,8 @@ export default function SectionArguments() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
                 <div className="2xl:pt-25">
-                    <h2 className="text-[var(--purple)] text-center lg:text-left text-base sm:text-lg md:text-xl lg:text-lg xl:text-base">Création de site web optimisé</h2>
-                    <h3 className="text-[32px] md:text-[60px] lg:text-[48px] xl:text-[72px] font-black text-center lg:text-left leading-tight text-[var(--purple-light)]">
+                    <h2 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] surtitle text-center lg:text-left uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">Création de site web optimisé</h2>
+                    <h3 className="text-[40px] md:text-[60px] lg:text-[48px] xl:text-[72px] font-black text-center lg:text-left leading-tight text-[var(--purple-light)]">
                         Le site web qui <br className="hidden lg:block" /> vous rendra <span className="font-extrabold text-black font-clash tracking-tighter leading-tight">fier</span>
                     </h3>
 
@@ -54,7 +54,7 @@ export default function SectionArguments() {
 
                 {/* Right column */}
                 <div className="relative mt-20 lg:mt-0">
-                    <img src="/liadtech-robot.png" width="180" height="180" alt="liadtech robot" class="absolute -left-10 -top-15 drop-shadow-2xl" />
+                    <img src="/liadtech-robot.png" width="180" height="180" alt="liadtech robot" className="absolute -left-2 md:-left-10 -top-15 drop-shadow-2xl" />
 
                     <picture>
                         <img src="/arguments-pic.png" alt="site Liadtech" className="w-full rounded-xl" />

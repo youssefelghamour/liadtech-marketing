@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero/Hero";
 import SectionArguments from "../components/SectionArguments/SectionArguments";
+import SectionCommunication from "../components/SectionCommunication/SectionCommunication";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <div>
                 <Hero />
                 <SectionArguments />
+                <SectionCommunication />
             </div>
         </>
     );
