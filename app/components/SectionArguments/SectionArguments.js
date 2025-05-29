@@ -10,8 +10,8 @@ export default function SectionArguments() {
         <section className="pt-36 px-5 sm:px-10 md:px-20 lg:px-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
-                <div className="pt-25">
-                    <h2 className="text-[var(--purple)] text-center lg:text-left">Création de site web optimisé</h2>
+                <div className="2xl:pt-25">
+                    <h2 className="text-[var(--purple)] text-center lg:text-left text-base sm:text-lg md:text-xl lg:text-lg xl:text-base">Création de site web optimisé</h2>
                     <h3 className="text-[32px] md:text-[60px] lg:text-[48px] xl:text-[72px] font-black text-center lg:text-left leading-tight text-[var(--purple-light)]">
                         Le site web qui <br className="hidden lg:block" /> vous rendra <span className="font-extrabold text-black font-clash tracking-tighter leading-tight">fier</span>
                     </h3>
@@ -57,7 +57,7 @@ export default function SectionArguments() {
                     <img src="/liadtech-robot.png" width="180" height="180" alt="liadtech robot" class="absolute -left-10 -top-15 drop-shadow-2xl" />
 
                     <picture>
-                        <img src="/arguments-pic.png" alt="site Liadtech" className="w-full" />
+                        <img src="/arguments-pic.png" alt="site Liadtech" className="w-full rounded-xl" />
                     </picture>
 
                     <div className="bg-[var(--purple-bg)] p-6 rounded-lg max-w-[295px] md:max-w-[455px] lg:max-w-[365px] absolute -bottom-20 right-4 xl:-right-4">
