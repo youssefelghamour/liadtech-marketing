@@ -21,7 +21,7 @@ export default function SectionEquipe() {
             </div>
 
             <div className="flex justify-center items-center mt-30 lg:mt-0">
-                <img src="/liadtech-robot.png" alt="Équipe Liadtech" className="w-100 animate-bounce" style={{ animationDuration: '6000ms' }} />
+                <img src="/liadtech-robot.png" alt="Équipe Liadtech" className="w-100 animate-bounce drop-shadow-lg" style={{ animationDuration: '6000ms' }} />
             </div>
         </section>
     );

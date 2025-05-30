@@ -36,7 +36,7 @@ const Hero = () => {
             </div>
 
             <picture className="w-full">
-                <img src="/hero-pic.png" alt="hero-pic" className="w-full mt-24"></img>
+                <img src="/hero-pic.png" alt="hero-pic" className="w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10"></img>
             </picture>
         </section>
     );
