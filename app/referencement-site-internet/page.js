@@ -73,11 +73,38 @@ export default function Home() {
         ],
     };
 
+    const solutionsProps = {
+        page: 'referencement',
+        pretitle: "L'agence des pros",
+        title: "Notre plan pour vous placer au",
+        highlight: "top",
+        p: "Nous intervenons sur tous les aspects du référencement naturel pour vous emmener au sommet !",
+        items: [
+            {
+                title: "Rédaction de pages optimisées pour le SEO",
+                description: "Nos rédacteurs créent sur votre site internet des pages optimisées pour grimper dans les résultats de recherche Google.",
+            },
+            {
+                title: "Optimisation de l’existant",
+                description: "Nos équipes retravaillent et optimisent le contenu déjà existant sur votre site internet.",
+            },
+            {
+                title: "Amélioration des performances",
+                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
+            },
+            {
+                title: "Stratégie de popularité",
+                description: "Nous définissons les meilleurs sites pour vous recommander et créons entre 8 et 16 liens renvoyant vers votre site internet.",
+            },
+        ],
+    };
+
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
+            <SectionSolutions {...solutionsProps}/>
         </div>
     );
 }

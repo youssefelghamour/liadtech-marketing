@@ -76,13 +76,39 @@ export default function Home() {
         ],
     };
 
+    const solutionsProps = {
+        page: 'referencement',
+        pretitle: "Conception de site web adapté à votre activité",
+        title: "Pour chaque objectif, une solution",
+        highlight: "LIADTECH",
+        p: "Quels que soient vos besoins, nous concevons le site internet qu’il vous faut.",
+        items: [
+            {
+                title: "Création graphique et rédaction des contenus",
+                description: "Votre site web à la hauteur de vos ambitions.",
+            },
+            {
+                title: "Version mobile et tablette",
+                description: "Accessible partout et à toute heure.",
+            },
+            {
+                title: "Réservation de votre nom de domaine",
+                description: "Imposez votre identité avec un www qui fait rêver.",
+            },
+            {
+                title: "Hébergement, maintenance et sécurisation sur nos serveurs",
+                description: "La facilité et la sécurité en un tour de main.",
+            },
+        ],
+    };
+
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
             <SectionEquipe />
-            <SectionSolutions />
+            <SectionSolutions {...solutionsProps}/>
             <SectionSteps />
             <SectionFAQ />
         </div>
