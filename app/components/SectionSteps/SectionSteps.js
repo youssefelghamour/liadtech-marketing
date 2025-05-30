@@ -2,8 +2,8 @@
 
 export default function SectionSteps() {
     return (
-        <section className="pt-25 bg-[var(--purple-light-2)] mt-20 px-5 sm:px-10 md:px-20">
-            <div className="mt-10 lg:mt-0 md:px-10 xl:px-50 md:px-20">
+        <section className="pt-25 bg-gray-200 mt-20 px-5 sm:px-10 md:px-20">
+            <div className="mt-10 lg:mt-0 md:px-10 xl:px-30 md:px-20 lg:px-2">
                 <div className="grid lg:grid-cols-2 pl-5">
 
                     {/* 1. First column */}

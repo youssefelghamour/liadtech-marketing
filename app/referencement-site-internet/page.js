@@ -7,29 +7,22 @@ import SectionSteps from "../components/SectionSteps/SectionSteps";
 import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 
 export const metadata = {
-    title: "LIADTECH - Creation Site Internet",
+    title: "LIADTECH - referencement-site-internet",
 };
 
 export default function Home() {
     const heroProps = {
-        img: `/hero-pic.png`,
-        surtitle: "Agence de création de site internet",
-        title: "Votre site web",
-        highlight: "clé en main",
-        title2: "100 % personnalisé",
-        p: "Devenez visible avec un site internet professionnel conçu par des experts.",
-        button: "Recevoir nos tarifs",
+        img: `/hero-pic-2.png`,
+        surtitle: "Agence SEO",
+        title: "Votre site web au",
+        highlight: "sommet de Google",
+        p: "Boostez votre visibilité sur le web avec une stratégie de référencement naturel sur mesure.",
+        button: "Découvrir nos offres",
     };
 
     return (
         <div>
             <Hero {...heroProps}/>
-            <SectionArguments />
-            <SectionCommunication />
-            <SectionEquipe />
-            <SectionSolutions />
-            <SectionSteps />
-            <SectionFAQ />
         </div>
     );
 }

@@ -26,8 +26,8 @@ class FAQ extends Component {
         const { openIndex } = this.state;
 
         return (
-            <section class="bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem]">
-                <div class="container mx-auto py-8 rounded-[2.5rem] space-y-4 lg:max-w-[60%]">
+            <section className="bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem]">
+                <div className="container mx-auto py-8 rounded-[2.5rem] space-y-4 lg:max-w-[60%]">
                     <p className="title text-center mb-10 font-black text-3xl italic">Une question ?</p>
 
                     {faqs.map(({ question, answer }, i) => (
