@@ -5,19 +5,15 @@ import { FiCalendar } from "react-icons/fi";
 
 class Hero extends Component {
     render() {
-        const sectionClassName = this.props.img === '/hero-pic-2.png' 
-            ? "section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl lg:pb-[289px]" 
-            : "section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl";
-        
         const imgClassName = this.props.img === '/hero-pic-2.png'
             ? "lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]"
             : "w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10";
 
         return (
-            <section className={sectionClassName}>
+            <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${this.props.page === 'referencement' ? 'lg:pb-[289px]' : ''}`}>
                 <div className="px-4 relative z-[1]">
-                    <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] surtitle lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
-                        {this.props.surtitle}
+                    <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
+                        {this.props.pretitle}
                     </h1>
 
                     <h2 className="text-[11vw] md:text-[9vw] lg:text-[60px] 2xl:text-[72px] leading-[110%] lg:leading-[120%] font-black lg:text-center max-w-[970px] mx-auto text-purple-brand max-w-[450px] lg:max-w-none">
