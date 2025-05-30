@@ -49,10 +49,35 @@ export default function Home() {
         button: "Recevoir nos tarifs",
     };
 
+    const communicationProps = {
+        page: 'referencement',
+        pretitle: "Le référencement naturel ça fonctionne comment ?",
+        title1: "Comment rendre son site internet visible sur",
+        highlight1: "Google",
+        items: [
+            {
+                img: '/communication-pic-1.png',
+                title: "Créer une stratégie de contenu",
+                description: "Créez régulièrement du contenu optimisé de qualité qui plaît à Google et à vos clients.",
+            },
+            {
+                img: '/communication-pic-4.png',
+                title: "Optimiser son site web",
+                description: "Optimisez les performances de votre site et assurez une maintenance de qualité.",
+            },
+            {
+                img: '/communication-pic-3.png',
+                title: "Intégrer une stratégie netlinking",
+                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
+            },
+        ],
+    };
+
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
+            <SectionCommunication {...communicationProps}/>
         </div>
     );
 }

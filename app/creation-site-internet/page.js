@@ -50,11 +50,37 @@ export default function Home() {
         button: "Prendre rendez-vous",
     };
 
+    const communicationProps = {
+        page: 'creation',
+        pretitle: "Votre agence de création de site web",
+        title1: "Une communication\n par des",
+        highlight1: "pros",
+        title2: ", pour les",
+        highlight2: "pros",
+        items: [
+            {
+                img: '/communication-pic-1.png',
+                title: "Présentez votre activité",
+                description: "Exposez votre histoire et vos qualifications au grand public tout en mettant en avant votre savoir-faire.",
+            },
+            {
+                img: '/communication-pic-2.png',
+                title: "Valorisez vos prestations",
+                description: "Soyez fiers de vos compétences et mettez en avant vos services, vos tarifs et vos zones d’intervention sur le web.",
+            },
+            {
+                img: '/communication-pic-3.png',
+                title: "Soyez joignable facilement",
+                description: "Rendez visibles vos coordonnées, horaires et formulaire de contact pour faciliter les demandes.",
+            },
+        ],
+    };
+
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
-            <SectionCommunication />
+            <SectionCommunication {...communicationProps}/>
             <SectionEquipe />
             <SectionSolutions />
             <SectionSteps />
