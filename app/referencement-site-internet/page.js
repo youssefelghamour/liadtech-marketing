@@ -99,12 +99,69 @@ export default function Home() {
         ],
     };
 
+    const stepsProp = {
+        page: 'referencement',
+        pretitle: "Nos experts SEO vous accompagnent de A à Z",
+        title: "Votre stratégie de visibilité en",
+        highlight: "6 étapes ?",
+        steps: {
+            right: [
+                {
+                    step: 1,
+                    title: "Audit de préparation",
+                    description:
+                    "Nos équipes sélectionnent les mots-clés les plus pertinents pour votre activité et définissent un plan adapté pour atteindre vos objectifs.",
+                    image: "/step-1.jpg",
+                },
+                {
+                    step: 3,
+                    title: "Création de contenu",
+                    description:
+                    "Pour booster vos résultats, nos équipes s’occupent de la rédaction et de la création de pages construites pour optimiser l’efficacité de votre référencement.",
+                    image: "/step-3.jpg",
+                },
+                {
+                    step: 5,
+                    title: "Maintenance et mises à jour",
+                    description:
+                    "Nous intervenons sur vos contenus pour un site dynamique qui s’adapte aux exigences de Google. Tous les 12 mois, nous rafraîchissons l’intégralité des contenus de votre site internet.",
+                    image: "/step-5.jpg",
+                },
+            ],
+            left: [
+                {
+                    step: 2,
+                    title: "Optimisation de votre site",
+                    description:
+                    "Nos équipes interviennent sur votre site internet pour optimiser son contenu, sa vitesse de chargement et sa structure.",
+                    image: "/step-2.jpg",
+                },
+                {
+                    step: 4,
+                    title: "Stratégie de netlinking",
+                    description:
+                    "Nous mettons en place une stratégie de netlinking en choisissant des sites pertinents et en créant des liens de confiance vers votre site internet.",
+                    image: "/step-4.jpg",
+                },
+                {
+                    step: 6,
+                    title: "Suivi et accompagnement",
+                    description:
+                    "Nos équipes vous tiennent informé de chaque action effectuée sur votre site internet, et effectuent avec vous le suivi de vos objectifs.",
+                    image: "/step-6.jpg",
+                },
+            ],
+        },
+        };
+
+
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
             <SectionSolutions {...solutionsProps}/>
+            <SectionSteps {...stepsProp}/>
         </div>
     );
 }

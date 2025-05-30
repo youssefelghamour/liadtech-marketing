@@ -102,6 +102,54 @@ export default function Home() {
         ],
     };
 
+    const stepsProp = {
+        page: 'creation',
+        pretitle: "La création d'un site web chez Liadtech",
+        title: "Votre site web en ",
+        highlight: "5 étapes",
+        steps: {
+            right: [
+            {
+                step: 1,
+                title: "Étude de votre activité",
+                description:
+                "D’abord bien connaître votre entreprise et vos objectifs pour vous proposer les offres les plus pertinentes et atteindre la réalisation de votre projet à vitesse grand V.",
+                image: "/step-1.jpg",
+            },
+            {
+                step: 3,
+                title: "Hébergement",
+                description:
+                "Hébergement (stockage des données) et sécurisation de votre site web sur nos serveurs.",
+                image: "/step-3.jpg",
+            },
+            {
+                step: 5,
+                title: "Suivi et accompagnement",
+                description:
+                "Maintenance et modifications ponctuelles de vos contenus, pour un site dynamique et toujours à jour.",
+                image: "/step-5.jpg",
+            },
+            ],
+            left: [
+            {
+                step: 2,
+                title: "Création de votre site web",
+                description:
+                "Conception d’une maquette de site internet à l’image de votre activité par nos experts webdesigners.",
+                image: "/step-2.jpg",
+            },
+            {
+                step: 4,
+                title: "Mise en ligne",
+                description: "Diffusion de votre site web sur la toile. 3, 2, 1 … Décollage !",
+                image: "/step-4.jpg",
+            },
+            ],
+        },
+    };
+
+
     return (
         <div>
             <Hero {...heroProps}/>
@@ -109,7 +157,7 @@ export default function Home() {
             <SectionCommunication {...communicationProps}/>
             <SectionEquipe />
             <SectionSolutions {...solutionsProps}/>
-            <SectionSteps />
+            <SectionSteps {...stepsProp}/>
             <SectionFAQ />
         </div>
     );
