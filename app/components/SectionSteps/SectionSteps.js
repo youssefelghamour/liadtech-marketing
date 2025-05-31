@@ -2,7 +2,8 @@
 
 export default function SectionSteps(props) {
     return (
-        <section className="pt-25 bg-gray-200 mt-20 px-5 sm:px-10 md:px-20">
+        // on page referencement this section has section resulatat above it with the bottom rounded corner so we add this styling to push this section above below it
+        <section className={`pt-25 bg-gray-200 mt-20 px-5 sm:px-10 md:px-20 ${props.page === 'referencement' ? 'mt-[-60px] lg:mt-[-120px] lg:pt-56 lg:pb-36' : ''}`}>
             <div className="mt-10 lg:mt-0 md:px-10 xl:px-30 md:px-20 lg:px-2">
                 <div className="grid lg:grid-cols-2 pl-5">
 

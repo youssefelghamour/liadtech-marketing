@@ -52,9 +52,10 @@ export default function Home() {
 
     const communicationProps = {
         page: 'creation',
+        titleMiddle: true,
         pretitle: "Votre agence de création de site web",
-        title1: "Une communication\n par des",
-        highlight1: "pros",
+        title: "Une communication par des",
+        highlight: "pros",
         title2: ", pour les",
         highlight2: "pros",
         items: [
@@ -76,8 +77,17 @@ export default function Home() {
         ],
     };
 
+    const equipeProps = {
+        pretitle: "Votre agence de création de site web",
+        title: "Toute une équipe ",
+        highlight: "dédiée ",
+        title2: "à votre projet.",
+        p: "Nous avançons avec vous pour accroître la visibilité de votre entreprise sur Google.",
+    };
+
     const solutionsProps = {
         page: 'referencement',
+        titleMiddle: true,
         pretitle: "Conception de site web adapté à votre activité",
         title: "Pour chaque objectif, une solution",
         highlight: "LIADTECH",
@@ -155,7 +165,7 @@ export default function Home() {
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
-            <SectionEquipe />
+            <SectionEquipe {...equipeProps}/>
             <SectionSolutions {...solutionsProps}/>
             <SectionSteps {...stepsProp}/>
             <SectionFAQ />

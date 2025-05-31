@@ -1,20 +1,10 @@
+import TitleMiddle from "../Title/Title";
 
 
 export default function SectionCommunication(props) {
   return (
     <section className="mt-36 px-5 sm:px-10 md:px-20">
-        <div className="text-center">
-            <h2 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] surtitle lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
-                {props.pretitle}
-            </h2>
-            
-            <h3 className="text-[11vw] md:text-[9vw] lg:text-[60px] 2xl:text-[72px] leading-[110%] lg:leading-[120%] font-black lg:text-center max-w-[970px] mx-auto text-purple-brand max-w-[450px] lg:max-w-none xl:mx-20">
-                {props.title1}
-                <span className="text-[var(--purple)] font-clash tracking-tighter leading-tight"> {props.highlight1}</span>
-                {props.title2}
-                <span className="text-[var(--purple)] font-clash tracking-tighter leading-tight"> {props.highlight2}</span>
-            </h3>
-        </div>
+        <TitleMiddle {...props} />
 
         <div className="grid lg:grid-cols-3 gap-10 mt-16">
             {props.items && props.items.map((item, index) => (

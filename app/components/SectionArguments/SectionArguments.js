@@ -2,6 +2,7 @@ import { SlScreenDesktop } from "react-icons/sl";
 import { PiCertificateLight } from "react-icons/pi";
 import { HiOutlineAdjustmentsVertical } from "react-icons/hi2";
 import { FaArrowRight } from "react-icons/fa";
+import Title from "../Title/Title";
 
 
 
@@ -11,10 +12,7 @@ export default function SectionArguments(props) {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
                 <div className={`${props.page !== 'referencement' ? '2xl:pt-25' : ''}`}>
-                    <h2 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] text-center lg:text-left uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">{props.pretitle}</h2>
-                    <h3 className="text-[40px] md:text-[60px] lg:text-[48px] xl:text-[72px] font-black text-center lg:text-left leading-none text-[var(--purple-light)]">
-                        {props.title} <span className="font-extrabold text-black font-clash tracking-tighter leading-tight">{props.highlight}</span>
-                    </h3>
+                    <Title {...props} />
 
                     <ul className={`mt-14 2xl:mr-15 ${props.page === 'creation' ? '2xl:ml-[120px]' : ''}`}>
                         {props.items ? (

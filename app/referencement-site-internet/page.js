@@ -8,6 +8,7 @@ import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 import { SlScreenDesktop } from 'react-icons/sl';
 import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
+import SectionResultat from "../components/SectionResultat/SectionResultat";
 
 
 export const metadata = {
@@ -52,8 +53,9 @@ export default function Home() {
     const communicationProps = {
         page: 'referencement',
         pretitle: "Le référencement naturel ça fonctionne comment ?",
-        title1: "Comment rendre son site internet visible sur",
-        highlight1: "Google",
+        title: "Comment rendre son site internet visible sur",
+        highlight: "Google",
+        titleMiddle: true,
         items: [
             {
                 img: '/communication-pic-1.png',
@@ -75,6 +77,7 @@ export default function Home() {
 
     const solutionsProps = {
         page: 'referencement',
+        titleMiddle: true,
         pretitle: "L'agence des pros",
         title: "Notre plan pour vous placer au",
         highlight: "top",
@@ -152,7 +155,29 @@ export default function Home() {
                 },
             ],
         },
-        };
+    };
+
+    const resultatProps = {
+        page: 'referencement',
+        pretitle: "Analyser les performances de sa stratégie SEO",
+        title: "Transparence et",
+        highlight: "résultat",
+        p: "Parce que les résultats du SEO se font sur le moyen et long terme, nos référenceurs agissent en toute transparence sur votre site internet.",
+        items: [
+            {
+                title: "Suivi des appels",
+                description: "Observez en temps réel le retour sur investissement de votre stratégie SEO.",
+            },
+            {
+                title: "Rapport en ligne",
+                description: "Suivez en temps réel les performances de votre référencement naturel.",
+            },
+            {
+                title: "Un chargé de projet SEO dédié",
+                description: "Bénéficiez des conseils et du savoir-faire d’un expert SEO dédié à votre projet.",
+            },
+        ],
+    };
 
 
     return (
@@ -161,6 +186,7 @@ export default function Home() {
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
             <SectionSolutions {...solutionsProps}/>
+            <SectionResultat {...resultatProps}/>
             <SectionSteps {...stepsProp}/>
         </div>
     );
