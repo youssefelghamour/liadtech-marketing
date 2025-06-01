@@ -9,6 +9,7 @@ import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
 import SectionResultat from "../components/SectionResultat/SectionResultat";
 import SectionTestimonials from "../components/SectionTestimonials/SectionTestimonials";
+import SectionContact from "../components/SectionContact/SectionContact";
 
 
 export const metadata = {
@@ -314,6 +315,7 @@ export default function Home() {
             <SectionSteps {...stepsProp}/>
             <SectionTestimonials {...testimonialsProps}/>
             <SectionFAQ {...faqProps}/>
+            <SectionContact />
         </div>
     );
 }

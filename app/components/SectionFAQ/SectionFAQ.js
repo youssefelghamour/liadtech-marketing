@@ -41,7 +41,7 @@ class FAQ extends Component {
                     {/* Individual Question/Answer */}
                     {this.props.faqs.map(({ question, answer }, i) => (
                         <FaqItem
-                            i={i}
+                            key={i}
                             question={question}
                             answer={answer}
                         />
