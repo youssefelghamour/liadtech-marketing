@@ -14,13 +14,18 @@ export default function SectionResultat(props) {
             </div>
 
             {/* Right */}
-            <div className="flex flex-col-reverse md:flex-row bg-[var(--purple-light-2)] justify-evenly rounded-lg px-5 relative overflow-hidden">
-                <div className="pt-6 px-6 lg:px-8 pb-10 border-[1px] border-[var(--purple-border)] rounded-2xl self-center md:bg-transparent bg-white max-w-[360px] mx-auto lg:mx-0 md:mb-0 mb-10">
-                    <p className="italic font-medium text-[20px] leading-[120%] text-center lg:text-left">“Je multiplie vos opportunités commerciales grâce au SEO”</p>
-                    <p className="uppercase font-bold text-[14px] text-center lg:text-left mt-5">employee - role</p>
-                </div>
-                <img src='/liadtech-robot.png' alt="liadtech robot" className="max-w-[300px] h-[400px] w-full mx-auto lg:mr-0"/>
-            </div>
+            {props.img 
+                ? (<img src={props.img} alt="liadtech robot" className="max-w-[650px] mx-auto"/>)
+                : (
+                    <div className="flex flex-col-reverse md:flex-row bg-[var(--purple-light-2)] justify-evenly rounded-lg px-5 relative overflow-hidden">
+                        <div className="pt-6 px-6 lg:px-8 pb-10 border-[1px] border-[var(--purple-border)] rounded-2xl self-center md:bg-transparent bg-white max-w-[360px] mx-auto lg:mx-0 md:mb-0 mb-10">
+                            <p className="italic font-medium text-[20px] leading-[120%] text-center lg:text-left">“Je multiplie vos opportunités commerciales grâce au SEO”</p>
+                            <p className="uppercase font-bold text-[14px] text-center lg:text-left mt-5">employee - role</p>
+                        </div>
+                        <img src='/liadtech-robot.png' alt="liadtech robot" className="max-w-[300px] h-[400px] w-full mx-auto lg:mr-0"/>
+                    </div>
+                )
+            }
         </section>
     );
 }

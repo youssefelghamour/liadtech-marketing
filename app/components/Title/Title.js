@@ -17,6 +17,7 @@ export default function Title(props) {
             </h3>
 
             <p className="mt-5 mb-5">{props.p}</p>
+            {props.p2 && <p className="mt-5 mb-5">{props.p2}</p>}
         </div>
     );
 }

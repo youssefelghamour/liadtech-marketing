@@ -2,13 +2,11 @@ import Hero from "../components/Hero/Hero";
 import SectionArguments from "../components/SectionArguments/SectionArguments";
 import SectionCommunication from "../components/SectionCommunication/SectionCommunication";
 import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
-import SectionSteps from "../components/SectionSteps/SectionSteps";
 import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 import { SlScreenDesktop } from 'react-icons/sl';
 import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
 import SectionResultat from "../components/SectionResultat/SectionResultat";
-import SectionTestimonials from "../components/SectionTestimonials/SectionTestimonials";
 import SectionContact from "../components/SectionContact/SectionContact";
 
 
@@ -106,106 +104,28 @@ export default function Home() {
         ],
     };
 
-    const stepsProp = {
-        page: 'referencement',
-        pretitle: "Nos experts SEO vous accompagnent de A à Z",
-        title: "Votre stratégie de visibilité en",
-        highlight: "6 étapes ?",
-        steps: {
-            right: [
-                {
-                    step: 1,
-                    title: "Audit de préparation",
-                    description:
-                    "Nos équipes sélectionnent les mots-clés les plus pertinents pour votre activité et définissent un plan adapté pour atteindre vos objectifs.",
-                    image: "/step-1.jpg",
-                },
-                {
-                    step: 3,
-                    title: "Création de contenu",
-                    description:
-                    "Pour booster vos résultats, nos équipes s’occupent de la rédaction et de la création de pages construites pour optimiser l’efficacité de votre référencement.",
-                    image: "/step-3.jpg",
-                },
-                {
-                    step: 5,
-                    title: "Maintenance et mises à jour",
-                    description:
-                    "Nous intervenons sur vos contenus pour un site dynamique qui s’adapte aux exigences de Google. Tous les 12 mois, nous rafraîchissons l’intégralité des contenus de votre site internet.",
-                    image: "/step-5.jpg",
-                },
-            ],
-            left: [
-                {
-                    step: 2,
-                    title: "Optimisation de votre site",
-                    description:
-                    "Nos équipes interviennent sur votre site internet pour optimiser son contenu, sa vitesse de chargement et sa structure.",
-                    image: "/step-2.jpg",
-                },
-                {
-                    step: 4,
-                    title: "Stratégie de netlinking",
-                    description:
-                    "Nous mettons en place une stratégie de netlinking en choisissant des sites pertinents et en créant des liens de confiance vers votre site internet.",
-                    image: "/step-4.jpg",
-                },
-                {
-                    step: 6,
-                    title: "Suivi et accompagnement",
-                    description:
-                    "Nos équipes vous tiennent informé de chaque action effectuée sur votre site internet, et effectuent avec vous le suivi de vos objectifs.",
-                    image: "/step-6.jpg",
-                },
-            ],
-        },
-    };
-
     const resultatProps = {
-        page: 'referencement',
-        pretitle: "Analyser les performances de sa stratégie SEO",
-        title: "Transparence et",
-        highlight: "résultat",
-        p: "Parce que les résultats du SEO se font sur le moyen et long terme, nos référenceurs agissent en toute transparence sur votre site internet.",
+        page: 'ads',
+        title: "Vos réseaux sociaux vont vous rapporter ",
+        highlight: "gros",
+        p: "Attirez plus de clients et boostez votre visibilité avec des publicités conçues et diffusées pour vous par les experts ALEO.",
+        p2: "Création de vos visuels, diffusion de vos campagnes, nos équipes mettent tout en œuvre pour vous faire atteindre vos objectifs.",
+        img: '/network-pic.png',
         items: [
             {
-                title: "Suivi des appels",
-                description: "Observez en temps réel le retour sur investissement de votre stratégie SEO.",
+                title: "Multipliez vos opportunités commerciales",
             },
             {
-                title: "Rapport en ligne",
-                description: "Suivez en temps réel les performances de votre référencement naturel.",
+                title: "Boostez votre visibilité",
             },
             {
-                title: "Un chargé de projet SEO dédié",
-                description: "Bénéficiez des conseils et du savoir-faire d’un expert SEO dédié à votre projet.",
-            },
-        ],
-    };
-
-    const testimonialsProps = {
-        pretitle: "Ils ont propulsé leur activité",
-        titleMiddle: true,
-        title: "Des résultats significatifs pour leur ",
-        highlight: "visibilité",
-        items: [
-            {
-                image: "/slide-1.jpg",
-                title: "En première position sur “Couvreur 93”",
-                company: "AMC Couverture",
-                speciality: "Artisan couvreur",
+                title: "Améliorez votre crédibilité en ligne",
             },
             {
-                image: "/slide-2.jpg",
-                title: "1ère position sur “Médecine ésthétique”",
-                company: "CMEG",
-                speciality: "Médecine ésthétique",
+                title: "Maîtrisez votre budget publicitaire",
             },
             {
-                image: "/slide-3.jpg",
-                title: "TOP 3 Google sur son activité",
-                company: "A2 Services",
-                speciality: "Nettoyage et entretien",
+                title: "Analysez vos résultats accompagné par un expert",
             },
         ],
     };
@@ -315,8 +235,6 @@ export default function Home() {
             <SectionCommunication {...communicationProps}/>
             <SectionSolutions {...solutionsProps}/>
             <SectionResultat {...resultatProps}/>
-            <SectionSteps {...stepsProp}/>
-            <SectionTestimonials {...testimonialsProps}/>
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>

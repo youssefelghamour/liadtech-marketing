@@ -21,7 +21,7 @@ export default function Home() {
         pretitle: "Agence de création de site internet",
         title: "Votre site web",
         highlight: "clé en main",
-        title2: "100 % personnalisé",
+        title2: "100% personnalisé",
         p: "Devenez visible avec un site internet professionnel conçu par des experts.",
         button: "Recevoir nos tarifs",
     };
