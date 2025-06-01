@@ -20,7 +20,7 @@ class FAQ extends Component {
                             <div className="absolute top-0 left-0 bg-[url('/faq-bg.png')] bg-no-repeat bg-contain opacity-25 w-[600px] h-[600px] z-[-1]" />
 
                             <div className="flex flex-col lg:w-1/2 justify-between lg:pt-25 md:pt-5 w-full mx-auto px-0">
-                                <p className="title font-black text-5xl italic xl:w-100 lg:-mt-15 lg:-ml-25">Vous avez une question?</p>
+                                <p className="title font-black text-5xl xl:w-100 lg:-mt-15 lg:-ml-25">Vous avez une <span className="font-clash tracking-tighter leading-tight">question?</span></p>
 
                                 {/* Arrow image that only shows on big screens */}
                                 <img src="/faq-arrow.png" alt="faq arrow" className="absolute lg:block hidden left-70 top-80 opacity-40 filter grayscale contrast-200 w-[300px] h-[300px] z-[-1]" />
