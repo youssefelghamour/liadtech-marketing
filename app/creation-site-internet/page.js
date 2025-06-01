@@ -8,6 +8,7 @@ import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 import { SlScreenDesktop } from 'react-icons/sl';
 import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
+import SectionContact from "../components/SectionContact/SectionContact";
 
 
 export const metadata = {
@@ -307,6 +308,7 @@ export default function Home() {
             <SectionSolutions {...solutionsProps}/>
             <SectionSteps {...stepsProp}/>
             <SectionFAQ {...faqProps}/>
+            <SectionContact />
         </div>
     );
 }
