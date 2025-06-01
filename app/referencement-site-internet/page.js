@@ -9,6 +9,7 @@ import { SlScreenDesktop } from 'react-icons/sl';
 import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
 import SectionResultat from "../components/SectionResultat/SectionResultat";
+import SectionTestimonials from "../components/SectionTestimonials/SectionTestimonials";
 
 
 export const metadata = {
@@ -179,6 +180,33 @@ export default function Home() {
         ],
     };
 
+    const testimonialsProps = {
+        pretitle: "Ils ont propulsé leur activité",
+        titleMiddle: true,
+        title: "Des résultats significatifs pour leur ",
+        highlight: "visibilité",
+        items: [
+            {
+                image: "/slide-1.jpg",
+                title: "En première position sur “Couvreur 93”",
+                company: "AMC Couverture",
+                speciality: "Artisan couvreur",
+            },
+            {
+                image: "/slide-2.jpg",
+                title: "1ère position sur “Médecine ésthétique”",
+                company: "CMEG",
+                speciality: "Médecine ésthétique",
+            },
+            {
+                image: "/slide-3.jpg",
+                title: "TOP 3 Google sur son activité",
+                company: "A2 Services",
+                speciality: "Nettoyage et entretien",
+            },
+        ],
+    };
+
 
     return (
         <div>
@@ -188,6 +216,7 @@ export default function Home() {
             <SectionSolutions {...solutionsProps}/>
             <SectionResultat {...resultatProps}/>
             <SectionSteps {...stepsProp}/>
+            <SectionTestimonials {...testimonialsProps}/>
         </div>
     );
 }
