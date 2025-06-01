@@ -54,26 +54,27 @@ export default function Home() {
     };
 
     const communicationProps = {
-        page: 'referencement',
-        pretitle: "Le référencement naturel ça fonctionne comment ?",
-        title: "Comment rendre son site internet visible sur",
-        highlight: "Google",
+        page: 'ads',
+        pretitle: "La communication sur les réseaux sociaux accessible aux pros",
+        title: "Les résultats au",
+        highlight: " coeur ",
+        title2: "de votre projet",
         titleMiddle: true,
         items: [
             {
-                img: '/communication-pic-1.png',
-                title: "Créer une stratégie de contenu",
-                description: "Créez régulièrement du contenu optimisé de qualité qui plaît à Google et à vos clients.",
+                img: '/communication-pic-5.png',
+                title: "Vos objectifs avant tout",
+                description: "Générer des contacts, développer votre notoriété, attirer des abonnés, notre équipe s’occupe de tout pour atteindre vos objectifs.",
             },
             {
-                img: '/communication-pic-4.png',
-                title: "Optimiser son site web",
-                description: "Optimisez les performances de votre site et assurez une maintenance de qualité.",
+                img: '/communication-pic-2.png',
+                title: "Un accompagnement flexible",
+                description: "Création de visuels, ciblage des utilisateurs, phases de test, nous mettons en place la formule la mieux adaptée à votre succès !",
             },
             {
-                img: '/communication-pic-3.png',
-                title: "Intégrer une stratégie netlinking",
-                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
+                img: '/communication-pic-6.png',
+                title: "Un suivi rigoureux",
+                description: "Suivez facilement les résultats de vos publicités et bénéficiez d’un accompagnement sur mesure.",
             },
         ],
     };
