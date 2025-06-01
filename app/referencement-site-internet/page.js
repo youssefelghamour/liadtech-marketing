@@ -13,7 +13,7 @@ import SectionContact from "../components/SectionContact/SectionContact";
 
 
 export const metadata = {
-    title: "LIADTECH - referencement-site-internet",
+    title: "LIADTECH - Référencement Site Internet",
 };
 
 export default function Home() {

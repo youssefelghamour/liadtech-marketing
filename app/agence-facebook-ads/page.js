@@ -13,7 +13,7 @@ import SectionContact from "../components/SectionContact/SectionContact";
 
 
 export const metadata = {
-    title: "LIADTECH - referencement-site-internet",
+    title: "LIADTECH - Agence Facebook Ads",
 };
 
 export default function Home() {
@@ -28,24 +28,26 @@ export default function Home() {
     };
 
     const argumentsProps = {
-        page: 'referencement',
-        title: "Pourquoi avoir un site web ",
-        highlight: "bien référencé ?",
+        page: 'ads',
+        pretitle: "LIADTECH, votre agence social media",
+        title: "Vos publicités en ",
+        highlight: "pilotage automatique",
+        img: '/pub-pic.png',
         items: [
             {
                 icon: SlScreenDesktop,
-                title: "Multipliez vos opportunités commerciales",
-                description: "80% des gens cherchent des pros sur Google.",
+                title: "Retour sur investissement",
+                description: "Communiquez efficacement avec une solution focalisée sur votre retour sur investissement.",
             },
             {
                 icon: PiCertificateLight,
-                title: "Gagnez la confiance de vos prospects",
-                description: "Être bien référencé améliore votre capital confiance.",
+                title: "Expertise",
+                description: "Développez votre notoriété avec des publicités professionnelles gérées par un expert en acquisition sur les réseaux sociaux.",
             },
             {
                 icon: HiOutlineAdjustmentsVertical,
-                title: "Démarquez-vous de vos concurrents",
-                description: "Montrez que vous êtes le meilleur dans votre secteur.",
+                title: "Stratégie",
+                description: "Atteignez vos objectifs avec une stratégie conçue sur-mesure pour votre entreprise et pilotée par un chargé de projet ALEO.",
             },
         ],
         button: "Recevoir nos tarifs",
