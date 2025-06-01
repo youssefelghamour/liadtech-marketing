@@ -5,9 +5,11 @@ import { FiCalendar } from "react-icons/fi";
 
 class Hero extends Component {
     render() {
-        const imgClassName = this.props.img === '/hero-pic-2.png'
-            ? "lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]"
-            : "w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10";
+        let imgClassName = this.props.page === 'ads'
+            ? 'w-full transition-transform duration-500 lg:scale-100 md:scale-110 lg:-mt-60 md:-mt-30 sm:-mt-10 mt-15'
+            : (this.props.page === 'referencement'
+                ? "lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]"
+                : "w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10");
 
         return (
             <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${this.props.page === 'referencement' ? 'lg:pb-[289px]' : ''}`}>
@@ -20,7 +22,7 @@ class Hero extends Component {
                         {this.props.title}
                         {this.props.highlight === "sommet de Google" && <br />}
                         <span className="font-extrabold text-[var(--purple)] bg-white font-clash tracking-tighter px-1 leading-tight"> {this.props.highlight} </span>&nbsp;
-                        <br />
+                        {this.props.page === 'ads' ? null : (<br></br>)}
                         {this.props.title2}
                     </h2>
 
