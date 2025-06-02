@@ -1,0 +1,16 @@
+@keyframes scrollAvis {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scrollAvis {
+  animation: scrollAvis 10s linear infinite;
+}
+
+.animate-scrollAvis:hover {
+  animation-play-state: paused;
+}

@@ -66,7 +66,7 @@ class Reviews extends Component {
         // Onclick on left arrow, update the current element with the previous one
         const { current } = this.state;
         // If we're on the first element, circle back to the end
-        const newIndex = current === 0 ? this.props.testimonials.length - 1 : current - 1;
+        const newIndex = current === 0 ? this.props.reviews.length - 1 : current - 1;
         this.setState({ current: newIndex });
     };
 
@@ -74,7 +74,7 @@ class Reviews extends Component {
         // Onclick on right arrow, update the current element with the next one
         const { current } = this.state;
         // If we're on the last element, circle back to the beginning
-        const newIndex = current === this.props.testimonials.length - 1 ? 0 : current + 1;
+        const newIndex = current === this.props.reviews.length - 1 ? 0 : current + 1;
         this.setState({ current: newIndex });
     };
 
@@ -85,30 +85,30 @@ class Reviews extends Component {
         // Circle around the list
         // If the current is the first element in the list then the previous is the last element
         if (current === 0) {
-            prev = this.props.testimonials.length - 1;
+            prev = this.props.reviews.length - 1;
         } else {
             prev = current - 1;
         }
 
         // If the current is the last element in the list then the next is the first element
-        if (current === this.props.testimonials.length - 1) {
+        if (current === this.props.reviews.length - 1) {
             next = 0;
         } else {
             next = current + 1;
         }
 
         return (
-            <section className="relative overflow-x-hidden py-10 px-5 bg-[var(--testimonials-bg-color)]">
+            <section className="relative overflow-x-hidden py-10 px-5">
                 <div className="relative flex justify-center items-center gap-6 lg:w-[3000px] left-1/2 -translate-x-1/2">
                     {/* Side cards shown only on large screens */}
                     <div className="hidden lg:block">
-                        <Card element={this.props.testimonials[prev]} position="side-prev" />
+                        <Card element={this.props.reviews[prev]} position="side-prev" />
                     </div>
 
-                    <Card element={this.props.testimonials[current]} position="active" />
+                    <Card element={this.props.reviews[current]} position="active" />
 
                     <div className="hidden lg:block">
-                        <Card element={this.props.testimonials[next]} position="side-next" />
+                        <Card element={this.props.reviews[next]} position="side-next" />
                     </div>
                 </div>
 
