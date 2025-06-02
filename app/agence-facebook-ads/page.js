@@ -1,13 +1,14 @@
 import Hero from "../components/Hero/Hero";
 import SectionArguments from "../components/SectionArguments/SectionArguments";
 import SectionCommunication from "../components/SectionCommunication/SectionCommunication";
-import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
 import SectionFAQ from "../components/SectionFAQ/SectionFAQ";
 import { SlScreenDesktop } from 'react-icons/sl';
 import { PiCertificateLight } from 'react-icons/pi';
 import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
 import SectionResultat from "../components/SectionResultat/SectionResultat";
 import SectionContact from "../components/SectionContact/SectionContact";
+import SectionPrix from "../components/SectionPrix/SectionPrix";
+import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
 
 
 export const metadata = {
@@ -77,33 +78,6 @@ export default function Home() {
         ],
     };
 
-    const solutionsProps = {
-        page: 'referencement',
-        titleMiddle: true,
-        pretitle: "L'agence des pros",
-        title: "Notre plan pour vous placer au",
-        highlight: "top",
-        p: "Nous intervenons sur tous les aspects du référencement naturel pour vous emmener au sommet !",
-        items: [
-            {
-                title: "Rédaction de pages optimisées pour le SEO",
-                description: "Nos rédacteurs créent sur votre site internet des pages optimisées pour grimper dans les résultats de recherche Google.",
-            },
-            {
-                title: "Optimisation de l’existant",
-                description: "Nos équipes retravaillent et optimisent le contenu déjà existant sur votre site internet.",
-            },
-            {
-                title: "Amélioration des performances",
-                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
-            },
-            {
-                title: "Stratégie de popularité",
-                description: "Nous définissons les meilleurs sites pour vous recommander et créons entre 8 et 16 liens renvoyant vers votre site internet.",
-            },
-        ],
-    };
-
     const resultatProps = {
         page: 'ads',
         title: "Vos réseaux sociaux vont vous rapporter ",
@@ -128,6 +102,13 @@ export default function Home() {
                 title: "Analysez vos résultats accompagné par un expert",
             },
         ],
+    };
+
+    const resultatProps2 = {
+        page: 'ads',
+        pretitle: 'Choisir Aleo pour ses annonces Facebook et Instagram',
+        title: "Votre chargé de projet dédié à votre stratégie",
+        p: "De la création de votre stratégie au suivi des statistiques, un chargé de projet prend en charge de A à Z vos campagnes.",
     };
 
     const faqProps = {
@@ -227,13 +208,24 @@ export default function Home() {
         ],
     }
 
+    const prixProps = {
+        page: 'ads',
+        titleMiddle: true,
+        pretitle: "Votre agence experte en social media",
+        title: "Pour chaque objectif, une ",
+        highlight: "solution ",
+        title2: "LIADTECH",
+        p: "Nous vous conseillons sur la meilleure stratégie à mettre en place pour atteindre vos objectifs.",
+    }
+
 
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
-            <SectionSolutions {...solutionsProps}/>
+            <SectionResultat {...resultatProps2}/>
+            <SectionSolutions {...prixProps}/>
             <SectionResultat {...resultatProps}/>
             <SectionFAQ {...faqProps}/>
             <SectionContact />
