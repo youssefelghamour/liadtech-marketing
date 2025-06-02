@@ -10,6 +10,7 @@ import { HiOutlineAdjustmentsVertical } from 'react-icons/hi2';
 import SectionResultat from "../components/SectionResultat/SectionResultat";
 import SectionTestimonials from "../components/SectionTestimonials/SectionTestimonials";
 import SectionContact from "../components/SectionContact/SectionContact";
+import SectionAvis from "../components/SectionAvis/SectionAvis";
 
 
 export const metadata = {
@@ -304,6 +305,70 @@ export default function Home() {
         ],
     }
 
+    const avisProps = {
+        page: 'referencement',
+        titleMiddle: true,
+        pretitle: "L’avis de nos clients",
+        title: "Plus de",
+        highlight: " 15 000 ",
+        title2: "entrepreneurs nous font confiance",
+        p: "Artisans, créateurs, indépendants...",
+        avis: [
+            {
+                client: "Met'Propre Nettoyage",
+                review: "Une belle communication avec beaucoup de professionnalisme.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Agence Immobilière Rabat Plus",
+                review: "Service impeccable et communication rapide. Leur travail a vraiment boosté notre visibilité en ligne.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Entreprise CCZ",
+                review: "L'équipe LIADTECH a su parfaitement répondre à mes attentes !",
+                rating: "★★★★★",
+            },
+            {
+                client: "Restaurant Dar Zaki - Marrakech",
+                review: "L'équipe a su capter l'esprit marocain tout en modernisant notre image. Très professionnelle et à l’écoute.",
+                rating: "★★★★★",
+            },
+            {
+                client: "LAURENCE FERRY",
+                review: "Equipe sympathique. La créativité sur les publications est top ! J'apprécie le fait qu'on nous demande si on a du contenu à mettre en avant, ça permet d'être au plus proche de notre métier. Je suis satisfaite.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Société Atlas Médical - Casablanca",
+                review: "Collaboration fluide et résultats au-delà de nos attentes. Leur expertise locale fait toute la différence.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Coopérative d’Arganier Essaouira",
+                review: "Une équipe passionnée qui comprend les spécificités du marché local. Je recommande vivement leurs services.",
+                rating: "★★★★★",
+            },
+        ],
+        reviews: [
+            {
+                img: "/avis-pic-1.jpg",
+                name: "Full Name - Gérante",
+                quote: "Une équipe très réactive qui a pris en main mes campagnes réseaux sociaux avec agilité...",
+            },
+            {
+                img: "/avis-pic-2.jpg",
+                name: "Example Name - Directeur",
+                quote: "Un accompagnement personnalisé et efficace. Merci !",
+            },
+            {
+                img: "/slide-2.jpg",
+                name: "Another Name - CEO",
+                quote: "Professionnels, à l'écoute et très efficaces.",
+            },
+        ],
+    };
+
 
     return (
         <div>
@@ -314,6 +379,7 @@ export default function Home() {
             <SectionResultat {...resultatProps}/>
             <SectionSteps {...stepsProp}/>
             <SectionTestimonials {...testimonialsProps}/>
+            <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>
