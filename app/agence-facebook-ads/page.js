@@ -9,6 +9,7 @@ import SectionResultat from "../components/SectionResultat/SectionResultat";
 import SectionContact from "../components/SectionContact/SectionContact";
 import SectionPrix from "../components/SectionPrix/SectionPrix";
 import SectionSolutions from "../components/SectionSolutions/SectionSolutions";
+import Reviews from "../components/Reviews/Reviews";
 
 
 export const metadata = {
@@ -247,7 +248,25 @@ export default function Home() {
         ],
     }
 
-    
+    const reviewsProps = {
+        testimonials: [
+            {
+                img: "/avis-pic-1.jpg",
+                name: "Full Name - Gérante",
+                quote: "Une équipe très réactive qui a pris en main mes campagnes réseaux sociaux avec agilité...",
+            },
+            {
+                img: "/avis-pic-2.jpg",
+                name: "Example Name - Directeur",
+                quote: "Un accompagnement personnalisé et efficace. Merci !",
+            },
+            {
+                img: "/slide-2.jpg",
+                name: "Another Name - CEO",
+                quote: "Professionnels, à l'écoute et très efficaces.",
+            },
+        ],
+    };
 
 
     return (
@@ -258,6 +277,7 @@ export default function Home() {
             <SectionResultat {...resultatProps2}/>
             <SectionSolutions {...prixProps}/>
             <SectionResultat {...resultatProps}/>
+            <Reviews {...reviewsProps}/>
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>
