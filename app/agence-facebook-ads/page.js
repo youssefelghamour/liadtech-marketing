@@ -46,7 +46,7 @@ export default function Home() {
             {
                 icon: HiOutlineAdjustmentsVertical,
                 title: "Stratégie",
-                description: "Atteignez vos objectifs avec une stratégie conçue sur-mesure pour votre entreprise et pilotée par un chargé de projet ALEO.",
+                description: "Atteignez vos objectifs avec une stratégie conçue sur-mesure pour votre entreprise et pilotée par un chargé de projet LIADTECH.",
             },
         ],
         button: "Recevoir nos tarifs",
@@ -82,7 +82,7 @@ export default function Home() {
         page: 'ads',
         title: "Vos réseaux sociaux vont vous rapporter ",
         highlight: "gros",
-        p: "Attirez plus de clients et boostez votre visibilité avec des publicités conçues et diffusées pour vous par les experts ALEO.",
+        p: "Attirez plus de clients et boostez votre visibilité avec des publicités conçues et diffusées pour vous par les experts LIADTECH.",
         p2: "Création de vos visuels, diffusion de vos campagnes, nos équipes mettent tout en œuvre pour vous faire atteindre vos objectifs.",
         img: '/network-pic.png',
         items: [
@@ -106,108 +106,11 @@ export default function Home() {
 
     const resultatProps2 = {
         page: 'ads',
-        pretitle: 'Choisir Aleo pour ses annonces Facebook et Instagram',
+        pretitle: 'Choisir LIADTECH pour ses annonces Facebook et Instagram',
         title: "Votre chargé de projet dédié à votre stratégie",
         p: "De la création de votre stratégie au suivi des statistiques, un chargé de projet prend en charge de A à Z vos campagnes.",
     };
-
-    const faqProps = {
-        page: "referencement",
-        faqs : [
-            {
-                question: "Qu’est-ce que le référencement naturel ?",
-                answer: (
-                    <>
-                        Le référencement naturel, aussi connu sous le nom de SEO, est l'ensemble des techniques visant à améliorer la position de votre site internet dans les résultats de recherche Google. Autrement dit, il s'agit d'optimiser la visibilité de votre site internet de manière organique, sans avoir à recourir à la publicité payante.
-                        <br />
-                        <br />
-                        Le référencement naturel comprend l'optimisation de différents aspects de votre site web, tant au niveau technique que du contenu. Cela inclut l'utilisation de mots-clés pertinents, l'optimisation de la structure du site, l'amélioration de la vitesse de chargement, la création de contenus de qualité et le développement de liens externes organiques.
-                        <br />
-                        <br />
-                        L'objectif principal du référencement naturel est d'améliorer la visibilité d'un site web dans les résultats de recherche, ce qui permet d'attirer un trafic qualifié et d'augmenter le nombre de visiteurs. En se classant parmi les premiers résultats pour des mots-clés pertinents, un site a plus de chances d'être visité et de générer du trafic organique.
-                        <br />
-                        <br />
-                        Le référencement naturel est un processus continu qui nécessite une surveillance et une adaptation constantes aux algorithmes des moteurs de recherche. Il peut également prendre du temps pour obtenir des résultats significatifs, car le classement d'un site web dépend de nombreux facteurs et de la concurrence existante sur ces mots-clés.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire appel à une agence SEO ?",
-                answer: (
-                    <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre visibilité sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
-                        <br />
-                        <br />
-                        Assurez-vous également que celle-ci propose un accompagnement et un suivi tout au long de la durée de votre contrat. Les résultats d’une stratégie SEO étant sur le moyen et sur le long terme, il est important que vous puissiez choisir un partenaire de confiance pour avoir le meilleur retour sur investissement possible.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire appel à une agence SEO ?",
-                answer: (
-                    <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre visibilité sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
-                        <br />
-                        <br />
-                        Passer par une agence spécialisée pour votre référencement naturel vous permettra d’optimiser vos résultats et d’avoir un meilleur retour sur investissement.
-                    </>
-                ),
-            },
-            {
-                question: "Combien coûte une agence SEO ?",
-                answer: (
-                    <>
-                        Le coût d’une agence SEO varie en fonction de plusieurs facteurs : l’importance de votre projet, la concurrence dans votre secteur, et les services spécifiques dont vous avez besoin. Certaines agences proposent des forfaits horaires et d’autres des tarifs mensuels. Si c’est la première fois que vous souhaitez passer par une agence SEO, nous vous conseillons de vous diriger vers des agences qui proposent des forfaits mensuels comme LIADTECH. Vous pourrez ainsi mieux estimer le retour sur investissement de votre campagne.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire du référencement naturel ?",
-                answer: (
-                    <>
-                        Mettre en place une stratégie de référencement naturel (SEO) est essentiel pour augmenter votre visibilité sur les moteurs de recherche comme Google. Une bonne stratégie SEO vous permettra d’attirer un trafic qualifié, d’améliorer le classement de votre site internet sur Google et de renforcer votre image de marque. En optimisant votre contenu et en utilisant des mots-clés pertinents, vous pourrez atteindre votre public cible sans avoir à payer pour des publicités.
-                        <br></br>
-                        <br></br>
-                        Il est à noter que le référencement naturel est une stratégie à moyen et long terme qui génèrera des résultats durables pour votre entreprise.
-                    </>
-                ),
-            },
-            {
-                question: "Comment optimiser son référencement naturel ?",
-                answer: (
-                    <>
-                        Un bon référencement naturel repose sur 3 piliers : stratégie de contenu, performances et netlinking. Pour commencer, vous ou votre agence SEO doit effectuer une recherche de mots-clés pertinents pour votre secteur. Il faudra ensuite créer du contenu informatif de qualité intégrant ces mots-clés de manière naturelle.
-                        <br></br>
-                        <br></br>
-                        Ensuite, vous devez optimiser votre site internet : vitesse de chargement, compatibilité mobile et structure Hn. Enfin, vous ou votre agence SEO doit mettre en place une stratégie de netlinking efficace avec des liens entrants provenant de site réputés afin d’optimiser les résultats de votre stratégie SEO.
-                        <br></br>
-                        <br></br>
-                        Un suivi régulier est indispensable pour pouvoir mettre en place des actions correctives et affirmer votre positionnement.                        
-                    </>
-                ),
-            },
-            {
-                question: "Fournissez-vous des rapports de performance SEO réguliers ?",
-                answer: (
-                    <>
-                        Absolument ! Si vous choisissez LIADTECH pour développer votre site internet professionnel, vous aurez accès à un tableau de performances vous permettant de suivre l'évolution de votre positionnement SEO et l'état de santé de votre site internet.
-                        <br></br>
-                        <br></br>
-                        De plus, un expert dédié à votre projet sera toujours disponible pour vous accompagner et assurer un suivi optimal de votre projet web. 
-                    </>
-                ),
-            },
-            {
-                question: "Quel est le délai avant de voir les résultats d’une stratégie SEO ?",
-                answer: (
-                    <>
-                        ALe délai avant de voir des résultats en SEO varie, mais il faut généralement compter entre 3 à 6 mois pour observer des améliorations significatives en termes de référencement Google. Ce délai dépend de plusieurs facteurs : la concurrence dans votre secteur, la qualité de votre contenu, l'état actuel de votre site internet et les efforts d'optimisation SEO mis en place. Le référencement naturel est une stratégie à long terme nécessitant une optimisation continue et des ajustements réguliers pour maintenir et améliorer les résultats en termes de trafic et de visibilité.
-                    </>
-                ),
-            },
-        ],
-    }
-
+    
     const prixProps = {
         page: 'ads',
         titleMiddle: true,
@@ -217,6 +120,134 @@ export default function Home() {
         title2: "LIADTECH",
         p: "Nous vous conseillons sur la meilleure stratégie à mettre en place pour atteindre vos objectifs.",
     }
+
+    const faqProps = {
+        page: "ads",
+        faqs : [
+            {
+                question: "Comment est mise en place ma stratégie de communication Facebook et Instagram ?",
+                answer: (
+                    <>
+                        Chez LIADTECH, nous établissons votre stratégie marketing sur les médias sociaux, en particulier Facebook et Instagram, en quatre étapes essentielles. Nous commençons par assurer l'accès à vos plateformes et concevoir votre page Facebook si nécessaire. Ensuite, un appel est programmé avec votre community manager dédié pour définir votre ligne éditoriale, en s'appuyant sur l'histoire et les enjeux de votre entreprise.
+                        <br />
+                        <br />
+                        L'étape suivante consiste à lancer votre première campagne publicitaire selon un calendrier préétabli. Cette démarche garantit une communication efficace et constante sur vos réseaux sociaux. Enfin, nous réalisons et gérons vos publicités Facebook et Instagram, en utilisant notre expertise en Facebook Ads pour atteindre et engager votre audience cible.
+                        <br />
+                        <br />
+                        En résumé, nous vous proposons une gestion de campagnes optimisée sur vos réseaux sociaux.
+                    </>
+                ),
+            },
+            {
+                question: "Proposez-vous une stratégie de contenu personnalisée ?",
+                answer: (
+                    <>
+                        Oui, nous concevons un calendrier éditorial adapté à votre action et vos objectifs publicitaires. Nous prenons en compte vos périodes de soldes, les informations que vous souhaitez mettre en avant et vos dates de fermeture pour vous créer un planning de publication personnalisé.
+                    </>
+                ),
+            },
+            {
+                question: "Pourquoi choisir une agence Facebook Ads / Instagram Ads comme LIADTECH ?",
+                answer: (
+                    <>
+                        Opter pour une agence Facebook Ads / Instagram telle qu'LIADTECH offre plusieurs avantages en termes de webmarketing et de gestion de vos réseaux publicitaires. Les publicitaires experts d'LIADTECH maîtrisent les outils spécifiques à ces plateformes, tels que le pixel Facebook, pour cibler efficacement vos prospects et maximiser le taux de conversion de vos campagnes publicitaires.
+                        <br />
+                        <br />
+                        De plus, nous assurons la création et la publication régulière de contenus attrayants, animant ainsi votre communauté de manière cohérente. Notre approche collaborative vous implique dans la validation des contenus et visuels.
+                        <br />
+                        <br />
+                        En bref, choisir LIADTECH, c'est bénéficier d'une expertise en publicité digitale tout en gardant le contrôle sur votre image de marque.
+                    </>
+                ),
+            },
+            {
+                question: "Je n’ai pas de compte Facebook ou Instagram, puis-je faire appel à LIADTECH ?",
+                answer: (
+                    <>
+                        Même sans compte Facebook ou Instagram, vous pouvez faire appel aux services d'LIADTECH. Notre agence s'occupe de créer votre page Facebook et de vous fournir les détails pour vous y connecter. Pour Instagram, nous demandons l'accès à votre compte une fois créé pour promouvoir les publications sponsorisées.
+                        <br></br>
+                        <br></br>
+                        Que vous soyez novice ou expérimenté dans la gestion des réseaux sociaux, nous simplifions votre communication digitale et développons votre communauté et votre notoriété.
+                    </>
+                ),
+            },
+            {
+                question: "Aidez-vous à cibler les publicités sur Facebook et Instagram ?",
+                answer: (
+                    <>
+                        Oui, chez LIADTECH, nous comprenons l'importance du ciblage pour le succès de vos publicités sur Facebook et Instagram. Nous ne nous contentons pas de créer des publicités, nous développons une stratégie de ciblage adaptée à votre activité.
+                        <br></br>
+                        <br></br>
+                        Nous travaillons à identifier et à comprendre votre public cible pour nous assurer que vos publicités atteignent les personnes les plus susceptibles d'être intéressées par vos produits ou services.
+                        <br></br>
+                        <br></br>
+                        De cette façon, nous aidons à générer du trafic pertinent vers votre site internet. En créant des campagnes publicitaires impactantes et personnalisées, nous visons à augmenter le taux de clic et la conversion de vos annonces sponsorisées.
+                        <br></br>
+                        <br></br>
+                        Que vous cherchiez à lancer une nouvelle campagne ou à optimiser une publicitaire existante, nous vous aiderons à atteindre vos objectifs.
+                        <br></br>
+                        <br></br>
+                        Notre expertise en publicité sur les réseaux sociaux nous permet de créer des campagnes adaptées à vos besoins spécifiques.
+                        <br></br>
+                        <br></br>
+                        Que ce soit pour augmenter la visibilité de votre marque, attirer de nouveaux clients ou stimuler les conversions, nous vous fournirons une stratégie de contenu personnalisée pour atteindre vos objectifs. De la réalisation d'une campagne jusqu'à l'analyse des résultats, nous veillons à utiliser vos ressources de manière optimale.
+                    </>
+                ),
+            },
+            {
+                question: "Pourquoi faire de l'Instagram Ads ou du Facebook Ads ?",
+                answer: (
+                    <>
+                        Faire de la publicité sur Meta Ads (Facebook Ads et Instagram Ads) est aujourd’hui incontournable pour les entreprises.
+                        <br></br>
+                        <br></br>
+                        Facebook Ads et Instagram Ads permettent de toucher une large audience tout en offrant des options de ciblage extrêmement précises. Vous pourrez adresser vos publicités à des utilisateurs en fonction de critères comme leur âge, leur localisation ou leurs intérêts.
+                        <br></br>
+                        <br></br>
+                        Que ce soit pour accroître la visibilité de votre marque, générer des ventes ou diriger du trafic vers votre site, Meta Ads vous permet de diffuser des publicités aux meilleurs endroits pour vous faire atteindre vos objectifs.
+                        <br></br>
+                        <br></br>
+                        Pour tirer le meilleur parti de Facebook Ads et Instagram Ads, le mieux est de passer par une agence Meta Partner comme LIADTECH afin de maximiser votre retour sur investissement.
+                    </>
+                ),
+            },
+            {
+                question: "Comment faire de l'Instagram Ads ou du Facebook Ads ?",
+                answer: (
+                    <>
+                        Pour lancer une campagne de publicité Facebook Ads ou Instagram Ads, vous devez accéder au gestionnaire de publicités Meta et créer une publicité. Attention, le gestionnaire de publicités est un outil complexe qui nécessite des compétences techniques spécifiques pour être utilisé à son plein potentiel.
+                        <br></br>
+                        <br></br>
+                        Pour gérer vos campagnes, il est préférable de passer par une agence META Partner telle que LIADTECH.
+                    </>
+                ),
+            },
+            {
+                question: "Quel budget pour faire une campagne Facebook Ads ou Instagram Ads ?",
+                answer: (
+                    <>
+                        Vous pouvez faire une campagne Facebook Ads ou Instagram Ads quel que soit votre budget. Cependant, vos résultats dépendront d’autres facteurs tels que vos cibles, vos concurrents et vos objectifs publicitaires.
+                        <br></br>
+                        <br></br>
+                        Pour assurer la meilleure qualité possible pour vos campagnes de publicités sur Meta, il est conseillé de passer par une agence certifiée Meta Partner telle que LIADTECH, qui pourra vous proposer une stratégie complète et paramétrer vos campagnes pour obtenir le meilleur retour sur investissement possible.
+                    </>
+                ),
+            },
+            {
+                question: "Peut-on faire de la publicité pour n’importe quelle activité ?",
+                answer: (
+                    <>
+                        En théorie, la publicité est possible pour de nombreux secteurs, mais Facebook et Instagram ont des règles strictes, notamment pour les produits de santé, les services financiers, les produits pour adultes, l’immobilier, l’emploi, et la politique.
+                        <br></br>
+                        <br></br>
+                        Pour savoir quelles typologies d’entreprises LIADTECH ne peut pas accompagner, nous vous invitons à consulter nos standards publicitaires.
+                    </>
+                ),
+            },
+        ],
+    }
+
+    
 
 
     return (
