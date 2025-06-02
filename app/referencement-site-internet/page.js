@@ -21,6 +21,7 @@ export default function Home() {
     const heroProps = {
         page: 'referencement',
         img: `/hero-pic-2.png`,
+        img2: '/hero-pic-3.png',
         pretitle: "Agence SEO",
         title: "Votre site web au",
         highlight: "sommet de Google",

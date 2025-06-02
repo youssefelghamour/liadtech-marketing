@@ -46,6 +46,14 @@ class Hero extends Component {
                 <picture className="w-full">
                     <img src={this.props.img} alt="hero-pic" className={imgClassName}></img>
                 </picture>
+
+                {/* Only the referencement page has the second image */}
+                {this.props.img2 && 
+                    <picture className="w-full">
+                        <img src={this.props.img2} alt="hero-pic" className="lg:block hidden lg:absolute bottom-0 right-1/2 lg:-right-12 w-full md:w-auto lg:w-[32vw] z-[0]"></img>
+                    </picture>
+                }
+                
             </section>
         );
     }
