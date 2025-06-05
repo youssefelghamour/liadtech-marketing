@@ -2,8 +2,8 @@
 
 export default function SectionSteps(props) {
     return (
-        // on page referencement this section has section resulatat above it with the bottom rounded corner so we add this styling to push this section above below it
-        <section className={`pt-25 bg-gray-200 mt-20 px-5 sm:px-10 md:px-20 ${props.page === 'referencement' ? 'mt-[-60px] lg:mt-[-120px] lg:pt-56 lg:pb-36 rounded-b-[60px] md:rounded-b-[80px] lg:rounded-b-[100px]' : ''}`}>
+        // on page referencement-site-internet this section has section resultat above it with the bottom rounded corner so we add this styling to push this section above below it
+        <section className={`pt-25 bg-gray-200 mt-20 px-5 sm:px-10 md:px-20 ${props.page === 'referencement-site-internet' ? 'mt-[-60px] lg:mt-[-120px] lg:pt-56 lg:pb-36 rounded-b-[60px] md:rounded-b-[80px] lg:rounded-b-[100px]' : ''}`}>
             <div className="mt-10 lg:mt-0 md:px-10 xl:px-30 md:px-20 lg:px-2">
                 <div className="grid lg:grid-cols-2 pl-5">
 
@@ -14,7 +14,7 @@ export default function SectionSteps(props) {
                             <h2 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
                                 {props.pretitle}
                             </h2>
-                            <p className={`text-left text-[40px] ${props.page === 'referencement' ? 'max-w-[450px]' : 'max-w-[340px]'}`}>
+                            <p className={`text-left text-[40px] ${props.page === 'referencement-site-internet' ? 'max-w-[450px]' : 'max-w-[340px]'}`}>
                                 {props.title} <span className="text-[var(--purple)] font-clash tracking-tighter leading-tight font-black">{props.highlight}</span>
                             </p>
                         </div>

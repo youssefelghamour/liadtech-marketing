@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function Home() {
     const heroProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         img: `/hero-pic-3.jpg`,
         pretitle: "Agence facebook Ads et Instagram Ads",
         highlight: " Transformez ",
@@ -30,7 +30,7 @@ export default function Home() {
     };
 
     const argumentsProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         pretitle: "LIADTECH, votre agence social media",
         title: "Vos publicités en ",
         highlight: "pilotage automatique",
@@ -56,7 +56,7 @@ export default function Home() {
     };
 
     const communicationProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         pretitle: "La communication sur les réseaux sociaux accessible aux pros",
         title: "Les résultats au",
         highlight: " coeur ",
@@ -82,7 +82,7 @@ export default function Home() {
     };
 
     const resultatProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         title: "Vos réseaux sociaux vont vous rapporter ",
         highlight: "gros",
         p: "Attirez plus de clients et boostez votre visibilité avec des publicités conçues et diffusées pour vous par les experts LIADTECH.",
@@ -108,7 +108,7 @@ export default function Home() {
     };
 
     const resultatProps2 = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         pretitle: 'Choisir LIADTECH pour ses annonces Facebook et Instagram',
         title: "Votre chargé de projet dédié à votre stratégie",
         p: "De la création de votre stratégie au suivi des statistiques, un chargé de projet prend en charge de A à Z vos campagnes.",
@@ -116,7 +116,7 @@ export default function Home() {
     
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         titleMiddle: true,
         pretitle: "Votre agence experte en social media",
         title: "Pour chaque objectif, une ",
@@ -256,7 +256,7 @@ export default function Home() {
     }
 
     const avisProps = {
-        page: 'ads',
+        page: 'agence-facebook-ads',
         titleMiddle: true,
         pretitle: "L’avis de nos clients",
         title: "Plus de",

@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function Home() {
     const heroProps = {
-        page: 'creation',
+        page: 'creation-site-internet',
         img: `/hero-pic.png`,
         pretitle: "Agence de création de site internet",
         title: "Votre site web",
@@ -29,7 +29,7 @@ export default function Home() {
     };
 
     const argumentsProps = {
-        page: 'creation',
+        page: 'creation-site-internet',
         pretitle: "Création de site web optimisé",
         title: "Le site web qui vous rendra ",
         highlight: "fier",
@@ -54,7 +54,7 @@ export default function Home() {
     };
 
     const communicationProps = {
-        page: 'creation',
+        page: 'creation-site-internet',
         titleMiddle: true,
         pretitle: "Votre agence de création de site web",
         title: "Une communication par des",
@@ -90,7 +90,7 @@ export default function Home() {
 
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
-        page: 'referencement',
+        page: 'creation-site-internet',
         titleMiddle: true,
         pretitle: "Conception de site web adapté à votre activité",
         title: "Pour chaque objectif, une solution",
@@ -121,7 +121,7 @@ export default function Home() {
     };
 
     const stepsProp = {
-        page: 'creation',
+        page: 'creation-site-internet',
         pretitle: "La création d'un site web chez Liadtech",
         title: "Votre site web en ",
         highlight: "5 étapes",
@@ -168,7 +168,7 @@ export default function Home() {
     };
 
     const faqProps = {
-        page: "creation",
+        page: "creation-site-internet",
         faqs : [
             {
                 question: "Est-il possible de modifier mon site internet LIADTECH après sa réalisation ?",
@@ -306,7 +306,7 @@ export default function Home() {
     }
 
     const avisProps = {
-        page: 'creation',
+        page: 'creation-site-internet',
         titleMiddle: true,
         pretitle: "L’avis de nos clients",
         title: "Plus de",

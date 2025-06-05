@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function Home() {
     const heroProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         img: `/hero-pic-2.png`,
         img2: '/hero-pic-3.png',
         pretitle: "Agence SEO",
@@ -30,7 +30,7 @@ export default function Home() {
     };
 
     const argumentsProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         title: "Pourquoi avoir un site web ",
         highlight: "bien référencé ?",
         items: [
@@ -54,7 +54,7 @@ export default function Home() {
     };
 
     const communicationProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         pretitle: "Le référencement naturel ça fonctionne comment ?",
         title: "Comment rendre son site internet visible sur",
         highlight: "Google",
@@ -80,7 +80,7 @@ export default function Home() {
 
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         titleMiddle: true,
         pretitle: "L'agence des pros",
         title: "Notre plan pour vous placer au",
@@ -111,7 +111,7 @@ export default function Home() {
     };
 
     const stepsProp = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         pretitle: "Nos experts SEO vous accompagnent de A à Z",
         title: "Votre stratégie de visibilité en",
         highlight: "6 étapes ?",
@@ -166,7 +166,7 @@ export default function Home() {
     };
 
     const resultatProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         pretitle: "Analyser les performances de sa stratégie SEO",
         title: "Transparence et",
         highlight: "résultat",
@@ -312,7 +312,7 @@ export default function Home() {
     }
 
     const avisProps = {
-        page: 'referencement',
+        page: 'referencement-site-internet',
         titleMiddle: true,
         pretitle: "L’avis de nos clients",
         title: "Plus de",

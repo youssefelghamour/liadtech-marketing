@@ -10,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 class SectionAvis extends Component {
     render() {
         return (
-            <section className={`pt-28 justify-center items-center text-center pb-30 px-5 sm:px-10 md:px-20 bg-[var(--testimonials-bg-color)] ${this.props.page === 'creation' ? '-mb-20 mt-15' : ''} `}>
+            <section className={`pt-28 justify-center items-center text-center pb-30 px-5 sm:px-10 md:px-20 bg-[var(--testimonials-bg-color)] ${this.props.page === 'creation-site-internet' ? '-mb-20 mt-15' : ''} `}>
                 <Title {...this.props} />
                 <Avis {...this.props} />
 

@@ -11,8 +11,8 @@ export default function SectionSolutions(props) {
             {/* Second Section PRICING */}
             <SectionPrix {...props.prixProps} />
 
-            {/* Third section: ads page doesn't have the solutions section */}
-            {props.page !== 'ads' && 
+            {/* Third section: agence-facebook-ads page doesn't have the bullet points section */}
+            {props.page !== 'agence-facebook-ads' && 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-28 justify-center">
                     {/* Left */}
                     <div className="flex justify-center lg:justify-end">
