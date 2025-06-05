@@ -1,17 +1,17 @@
-import { SlScreenDesktop } from "react-icons/sl";
-import { PiCertificateLight } from "react-icons/pi";
-import { HiOutlineAdjustmentsVertical } from "react-icons/hi2";
 import { FaArrowRight } from "react-icons/fa";
 import Title from "../Title/Title";
 
 
 
-export default function SectionArguments(props) {
+export default function SectionArguments(props) {    
+    // These pages don't have the top left img and the bottom right button
+    const pagesWithoutButtons = ['agence-facebook-ads', 'agence-google-ads'];
+
     return (
         <section className="pt-36 px-5 sm:px-10 md:px-20 lg:px-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
-                <div className={`${props.page !== 'referencement-site-internet' ? '2xl:pt-25' : ''}`}>
+                <div className={` ${props.page !== 'agence-google-ads' ? '2xl:pt-25' : ''}`}>
                     <Title {...props} />
 
                     <ul className={`mt-14 2xl:mr-15 ${props.page !== 'referencement-site-internet' ? '2xl:ml-[120px]' : ''}`}>
@@ -33,7 +33,7 @@ export default function SectionArguments(props) {
 
                 {/* Right column */}
                 <div className="relative mt-20 lg:mt-0">
-                    {props.page !== 'agence-facebook-ads' && 
+                    {!pagesWithoutButtons.includes(props.page) && 
                         <img src="/liadtech-robot.png" width="180" height="180" alt="liadtech robot" className="absolute -left-2 md:-left-10 -top-15 drop-shadow-2xl" />
                     }
 
@@ -41,7 +41,7 @@ export default function SectionArguments(props) {
                         <img src={props.img ? props.img : "/arguments-pic.png"} alt="site Liadtech" className="w-full rounded-xl" />
                     </picture>
                     
-                    {props.page !== 'agence-facebook-ads' && 
+                    {!pagesWithoutButtons.includes(props.page) && 
                         <div className={`bg-[var(--purple-bg)] p-6 rounded-lg max-w-[295px] md:max-w-[455px] lg:max-w-[365px] absolute -bottom-20 ${props.page === 'creation-site-internet' ? 'right-4 xl:-right-4' : 'left-1/2 -translate-x-1/2'}`}>
                             <p className="font-medium text-purple-brand text-sm md:text-lg lg:text-base">
                                 Gagnez du temps grâce à une équipe d'experts dédiée à la réalisation de votre projet et à l'atteinte de vos objectifs.
