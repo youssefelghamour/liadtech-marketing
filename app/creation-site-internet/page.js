@@ -18,6 +18,7 @@ export const metadata = {
 
 export default function Home() {
     const heroProps = {
+        page: 'creation',
         img: `/hero-pic.png`,
         pretitle: "Agence de création de site internet",
         title: "Votre site web",

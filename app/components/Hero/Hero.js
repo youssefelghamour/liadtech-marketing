@@ -7,12 +7,12 @@ class Hero extends Component {
     render() {
         let imgClassName = this.props.page === 'ads'
             ? 'w-full transition-transform duration-500 lg:scale-100 md:scale-110 lg:-mt-60 md:-mt-30 sm:-mt-10 mt-15'
-            : (this.props.page === 'referencement'
+            : (['referencement', 'agence-seo-local', 'pub', 'logos'].includes(this.props.page)
                 ? "lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]"
                 : "w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10");
 
         return (
-            <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${this.props.page === 'referencement' ? 'lg:pb-[289px]' : ''}`}>
+            <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${['referencement', 'agence-seo-local', 'pub', 'logos'].includes(this.props.page) ? 'lg:pb-[289px]' : ''}`}>
                 <div className="px-4 relative z-[1]">
                     <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
                         {this.props.pretitle}
@@ -20,7 +20,7 @@ class Hero extends Component {
 
                     <h2 className="text-[11vw] md:text-[9vw] lg:text-[60px] 2xl:text-[72px] leading-[110%] lg:leading-[120%] font-black lg:text-center max-w-[970px] mx-auto text-purple-brand max-w-[450px] lg:max-w-none">
                         {this.props.title}
-                        {this.props.highlight === "sommet de Google" && <br />}
+                        {['referencement', 'agence-seo-local'].includes(this.props.page) && <br />}
                         <span className="font-extrabold text-[var(--purple)] bg-white font-clash tracking-tighter px-1 leading-tight"> {this.props.highlight} </span>&nbsp;
                         {this.props.page === 'ads' ? null : (<br></br>)}
                         {this.props.title2}
@@ -47,7 +47,7 @@ class Hero extends Component {
                     <img src={this.props.img} alt="hero-pic" className={imgClassName}></img>
                 </picture>
 
-                {/* Only the referencement page has the second image */}
+                {/* Not all pages have the second image */}
                 {this.props.img2 && 
                     <picture className="w-full">
                         <img src={this.props.img2} alt="hero-pic" className="lg:block hidden lg:absolute bottom-0 right-1/2 lg:-right-12 w-full md:w-auto lg:w-[32vw] z-[0]"></img>
