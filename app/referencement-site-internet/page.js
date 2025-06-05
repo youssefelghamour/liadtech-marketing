@@ -216,7 +216,7 @@ export default function Home() {
     };
 
     const faqProps = {
-        page: "referencement",
+        page: "referencement-site-internet",
         faqs : [
             {
                 question: "Qu’est-ce que le référencement naturel ?",

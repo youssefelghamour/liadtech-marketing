@@ -131,7 +131,7 @@ export default function Home() {
     }
 
     const faqProps = {
-        page: "ads",
+        page: "agence-facebook-ads",
         faqs : [
             {
                 question: "Comment est mise en place ma stratégie de communication Facebook et Instagram ?",

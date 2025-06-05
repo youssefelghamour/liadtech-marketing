@@ -112,243 +112,6 @@ export default function Home() {
         p: "Choisissez la bonne manière pour attirer des clients",
     };
 
-
-
-    const argumentsProps = {
-        page: 'agence-seo-local',
-        title: "Pourquoi avoir un site web ",
-        highlight: "bien référencé ?",
-        items: [
-            {
-                icon: SlScreenDesktop,
-                title: "Multipliez vos opportunités commerciales",
-                description: "80% des gens cherchent des pros sur Google.",
-            },
-            {
-                icon: PiCertificateLight,
-                title: "Gagnez la confiance de vos prospects",
-                description: "Être bien référencé améliore votre capital confiance.",
-            },
-            {
-                icon: HiOutlineAdjustmentsVertical,
-                title: "Démarquez-vous de vos concurrents",
-                description: "Montrez que vous êtes le meilleur dans votre secteur.",
-            },
-        ],
-        button: "Recevoir nos tarifs",
-    };
-
-    const communicationProps = {
-        page: 'agence-seo-local',
-        pretitle: "Le référencement naturel ça fonctionne comment ?",
-        title: "Comment rendre son site internet visible sur",
-        highlight: "Google",
-        titleMiddle: true,
-        items: [
-            {
-                img: '/communication-pic-1.png',
-                title: "Créer une stratégie de contenu",
-                description: "Créez régulièrement du contenu optimisé de qualité qui plaît à Google et à vos clients.",
-            },
-            {
-                img: '/communication-pic-4.png',
-                title: "Optimiser son site web",
-                description: "Optimisez les performances de votre site et assurez une maintenance de qualité.",
-            },
-            {
-                img: '/communication-pic-3.png',
-                title: "Intégrer une stratégie netlinking",
-                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
-            },
-        ],
-    };
-
-    // prixProps: Solutions section includes the price section
-    const solutionsProps = {
-        page: 'agence-seo-local',
-        titleMiddle: true,
-        pretitle: "L'agence des pros",
-        title: "Notre plan pour vous placer au",
-        highlight: "top",
-        p: "Nous intervenons sur tous les aspects du référencement naturel pour vous emmener au sommet !",
-        items: [
-            {
-                title: "Rédaction de pages optimisées pour le SEO",
-                description: "Nos rédacteurs créent sur votre site internet des pages optimisées pour grimper dans les résultats de recherche Google.",
-            },
-            {
-                title: "Optimisation de l’existant",
-                description: "Nos équipes retravaillent et optimisent le contenu déjà existant sur votre site internet.",
-            },
-            {
-                title: "Amélioration des performances",
-                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
-            },
-            {
-                title: "Stratégie de popularité",
-                description: "Nous définissons les meilleurs sites pour vous recommander et créons entre 8 et 16 liens renvoyant vers votre site internet.",
-            },
-        ],
-        prixProps: {
-            price: 249,
-            p: "Escaladez facilement les résultats de recherche Google !",
-        },
-    };
-
-    const stepsProp = {
-        page: 'agence-seo-local',
-        pretitle: "Nos experts SEO vous accompagnent de A à Z",
-        title: "Votre stratégie de agence-seo-local en",
-        highlight: "6 étapes ?",
-        steps: {
-            right: [
-                {
-                    step: 1,
-                    title: "Audit de préparation",
-                    description:
-                    "Nos équipes sélectionnent les mots-clés les plus pertinents pour votre activité et définissent un plan adapté pour atteindre vos objectifs.",
-                    image: "/step-1.jpg",
-                },
-                {
-                    step: 3,
-                    title: "Création de contenu",
-                    description:
-                    "Pour booster vos résultats, nos équipes s’occupent de la rédaction et de la création de pages construites pour optimiser l’efficacité de votre référencement.",
-                    image: "/step-3.jpg",
-                },
-                {
-                    step: 5,
-                    title: "Maintenance et mises à jour",
-                    description:
-                    "Nous intervenons sur vos contenus pour un site dynamique qui s’adapte aux exigences de Google. Tous les 12 mois, nous rafraîchissons l’intégralité des contenus de votre site internet.",
-                    image: "/step-5.jpg",
-                },
-            ],
-            left: [
-                {
-                    step: 2,
-                    title: "Optimisation de votre site",
-                    description:
-                    "Nos équipes interviennent sur votre site internet pour optimiser son contenu, sa vitesse de chargement et sa structure.",
-                    image: "/step-2.jpg",
-                },
-                {
-                    step: 4,
-                    title: "Stratégie de netlinking",
-                    description:
-                    "Nous mettons en place une stratégie de netlinking en choisissant des sites pertinents et en créant des liens de confiance vers votre site internet.",
-                    image: "/step-4.jpg",
-                },
-                {
-                    step: 6,
-                    title: "Suivi et accompagnement",
-                    description:
-                    "Nos équipes vous tiennent informé de chaque action effectuée sur votre site internet, et effectuent avec vous le suivi de vos objectifs.",
-                    image: "/step-6.jpg",
-                },
-            ],
-        },
-    };
-
-    
-
-    const faqProps = {
-        page: "agence-seo-local",
-        faqs : [
-            {
-                question: "Qu’est-ce que le référencement naturel ?",
-                answer: (
-                    <>
-                        Le référencement naturel, aussi connu sous le nom de SEO, est l'ensemble des techniques visant à améliorer la position de votre site internet dans les résultats de recherche Google. Autrement dit, il s'agit d'optimiser la agence-seo-local de votre site internet de manière organique, sans avoir à recourir à la publicité payante.
-                        <br />
-                        <br />
-                        Le référencement naturel comprend l'optimisation de différents aspects de votre site web, tant au niveau technique que du contenu. Cela inclut l'utilisation de mots-clés pertinents, l'optimisation de la structure du site, l'amélioration de la vitesse de chargement, la création de contenus de qualité et le développement de liens externes organiques.
-                        <br />
-                        <br />
-                        L'objectif principal du référencement naturel est d'améliorer la agence-seo-local d'un site web dans les résultats de recherche, ce qui permet d'attirer un trafic qualifié et d'augmenter le nombre de visiteurs. En se classant parmi les premiers résultats pour des mots-clés pertinents, un site a plus de chances d'être visité et de générer du trafic organique.
-                        <br />
-                        <br />
-                        Le référencement naturel est un processus continu qui nécessite une surveillance et une adaptation constantes aux algorithmes des moteurs de recherche. Il peut également prendre du temps pour obtenir des résultats significatifs, car le classement d'un site web dépend de nombreux facteurs et de la concurrence existante sur ces mots-clés.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire appel à une agence SEO ?",
-                answer: (
-                    <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre agence-seo-local sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
-                        <br />
-                        <br />
-                        Assurez-vous également que celle-ci propose un accompagnement et un suivi tout au long de la durée de votre contrat. Les résultats d’une stratégie SEO étant sur le moyen et sur le long terme, il est important que vous puissiez choisir un partenaire de confiance pour avoir le meilleur retour sur investissement possible.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire appel à une agence SEO ?",
-                answer: (
-                    <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre agence-seo-local sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
-                        <br />
-                        <br />
-                        Passer par une agence spécialisée pour votre référencement naturel vous permettra d’optimiser vos résultats et d’avoir un meilleur retour sur investissement.
-                    </>
-                ),
-            },
-            {
-                question: "Combien coûte une agence SEO ?",
-                answer: (
-                    <>
-                        Le coût d’une agence SEO varie en fonction de plusieurs facteurs : l’importance de votre projet, la concurrence dans votre secteur, et les services spécifiques dont vous avez besoin. Certaines agences proposent des forfaits horaires et d’autres des tarifs mensuels. Si c’est la première fois que vous souhaitez passer par une agence SEO, nous vous conseillons de vous diriger vers des agences qui proposent des forfaits mensuels comme LIADTECH. Vous pourrez ainsi mieux estimer le retour sur investissement de votre campagne.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire du référencement naturel ?",
-                answer: (
-                    <>
-                        Mettre en place une stratégie de référencement naturel (SEO) est essentiel pour augmenter votre agence-seo-local sur les moteurs de recherche comme Google. Une bonne stratégie SEO vous permettra d’attirer un trafic qualifié, d’améliorer le classement de votre site internet sur Google et de renforcer votre image de marque. En optimisant votre contenu et en utilisant des mots-clés pertinents, vous pourrez atteindre votre public cible sans avoir à payer pour des publicités.
-                        <br></br>
-                        <br></br>
-                        Il est à noter que le référencement naturel est une stratégie à moyen et long terme qui génèrera des résultats durables pour votre entreprise.
-                    </>
-                ),
-            },
-            {
-                question: "Comment optimiser son référencement naturel ?",
-                answer: (
-                    <>
-                        Un bon référencement naturel repose sur 3 piliers : stratégie de contenu, performances et netlinking. Pour commencer, vous ou votre agence SEO doit effectuer une recherche de mots-clés pertinents pour votre secteur. Il faudra ensuite créer du contenu informatif de qualité intégrant ces mots-clés de manière naturelle.
-                        <br></br>
-                        <br></br>
-                        Ensuite, vous devez optimiser votre site internet : vitesse de chargement, compatibilité mobile et structure Hn. Enfin, vous ou votre agence SEO doit mettre en place une stratégie de netlinking efficace avec des liens entrants provenant de site réputés afin d’optimiser les résultats de votre stratégie SEO.
-                        <br></br>
-                        <br></br>
-                        Un suivi régulier est indispensable pour pouvoir mettre en place des actions correctives et affirmer votre positionnement.                        
-                    </>
-                ),
-            },
-            {
-                question: "Fournissez-vous des rapports de performance SEO réguliers ?",
-                answer: (
-                    <>
-                        Absolument ! Si vous choisissez LIADTECH pour développer votre site internet professionnel, vous aurez accès à un tableau de performances vous permettant de suivre l'évolution de votre positionnement SEO et l'état de santé de votre site internet.
-                        <br></br>
-                        <br></br>
-                        De plus, un expert dédié à votre projet sera toujours disponible pour vous accompagner et assurer un suivi optimal de votre projet web. 
-                    </>
-                ),
-            },
-            {
-                question: "Quel est le délai avant de voir les résultats d’une stratégie SEO ?",
-                answer: (
-                    <>
-                        ALe délai avant de voir des résultats en SEO varie, mais il faut généralement compter entre 3 à 6 mois pour observer des améliorations significatives en termes de référencement Google. Ce délai dépend de plusieurs facteurs : la concurrence dans votre secteur, la qualité de votre contenu, l'état actuel de votre site internet et les efforts d'optimisation SEO mis en place. Le référencement naturel est une stratégie à long terme nécessitant une optimisation continue et des ajustements réguliers pour maintenir et améliorer les résultats en termes de trafic et de agence-seo-local.
-                    </>
-                ),
-            },
-        ],
-    }
-
     const avisProps = {
         page: 'agence-seo-local',
         titleMiddle: true,
@@ -413,6 +176,150 @@ export default function Home() {
         ],
     };
 
+    const stepsProp = {
+        page: 'agence-seo-local',
+        pretitle: "L’optimisation de votre fiche Google",
+        title: "Votre stratégie de référencement en",
+        highlight: "4 étapes",
+        steps: {
+            right: [
+                {
+                    step: 1,
+                    title: "Création de la stratégie de référencement",
+                    description: "Nous analysons votre fiche d’établissement et mettons en place une stratégie de référencement sur mesure.",
+                    image: "/step-1.jpg",
+                },
+                {
+                    step: 3,
+                    title: "Actions de développement de la notoriété",
+                    description: "Nos équipes mettent en place une stratégie d’interaction sur votre fiche Google pour vous faire grimper dans les résultats de recherche.",
+                    image: "/step-3.jpg",
+                },
+            ],
+            left: [
+                {
+                    step: 2,
+                    title: "Optimisation de votre fiche",
+                    description: "Nous rédigeons et optimisons le contenu de votre fiche d’établissement pour que Google et vos clients aient le maximum d’informations possible.",
+                    image: "/step-2.jpg",
+                },
+                {
+                    step: 4,
+                    title: "Suivi et analyse des résultats",
+                    description: "Suivez les résultats de votre stratégie de référencement en temps réel.",
+                    image: "/step-4.jpg",
+                },
+            ],
+        },
+    };
+
+    const faqProps = {
+        page: "agence-seo-local",
+        faqs : [
+            {
+                question: "Qu'est-ce qu'une fiche Google et pourquoi est-elle importante ?",
+                answer: (
+                    <>
+                        Une fiche Google est votre carte de visite en ligne. Elle apparaît dans les résultats de recherche Google et sur Google Maps, offrant aux utilisateurs des informations clés sur votre entreprise, telles que votre adresse, numéro de téléphone, horaires d'ouverture, site web, ainsi que des photos et des avis clients.
+                        <br />
+                        <br />
+                        Cette fiche améliore considérablement la visibilité locale de votre entreprise. Elle permet aux clients potentiels de vous trouver facilement lorsqu'ils recherchent des produits ou services similaires dans votre zone géographique. Une fiche bien optimisée renforce la crédibilité de votre entreprise, attire plus de clients et génère du contact.
+                    </>
+                ),
+            },
+            {
+                question: "Quels sont les avantages d'avoir une fiche Google pour mon entreprise ?",
+                answer: (
+                    <>
+                        Avoir une fiche Google améliore votre visibilité en ligne, en vous permettant d'apparaître en haut des résultats de recherche Google et sur Google Maps lorsque les clients recherchent des services ou produits locaux. Cela facilite la découverte de votre entreprise par des clients potentiels à proximité.
+                        <br />
+                        <br />
+                        Cette fiche fournit des informations essentielles comme votre adresse, vos horaires d'ouverture, et votre numéro de téléphone et aide les clients à vous contacter directement ou à vous rendre visite. De plus, elle permet de recueillir et de gérer des avis clients pour renforcer votre crédibilité et inciter d'autres personnes à choisir vos services.
+                    </>
+                ),
+            },
+            {
+                question: "Comment puis-je créer une fiche Google pour mon entreprise ?",
+                answer: (
+                    <>
+                        Vous pouvez créer votre fiche d’établissement via votre compte Google via Google my business.
+                        <br />
+                        <br />
+                        LIADTECH vous offre un service clé en main pour obtenir votre fiche 100 % personnalisée et optimisée pour booster votre visibilité locale.
+                    </>
+                ),
+            },
+            {
+                question: "Quels sont les éléments clés d'une fiche Google bien optimisée ?",
+                answer: (
+                    <>
+                        Pour optimiser une fiche Google, il est essentiel de fournir des informations complètes et précises, telles que le nom, l'adresse, le numéro de téléphone, ainsi que les horaires d'ouverture de votre entreprise. L'utilisation de photos de qualité est également un élément clé à l’optimisation de votre fiche. Il est important d’utiliser des mots clés pertinents pour la présentation de votre entreprise.
+                    </>
+                ),
+            },
+            {
+                question: "Combien de temps faut-il pour que ma fiche Google soit visible en ligne ?",
+                answer: (
+                    <>
+                        Il faut compter jusqu’à 1 mois afin que votre fiche Google soit visible en ligne.
+                        <br></br>
+                        <br></br>
+                        Sa visibilité sera ensuite améliorée avec le temps grâce au référencement. Son optimisation est importante pour booster cette visibilité.
+                    </>
+                ),
+            },
+            {
+                question: "Que faire si mon entreprise a plusieurs emplacements ?",
+                answer: (
+                    <>
+                        Si votre entreprise possède plusieurs emplacements, il est important de créer une fiche Google distincte pour chaque site. Elles doivent chacune comporter des informations spécifiques à son emplacement, telles que l'adresse, le numéro de téléphone, et les horaires d'ouverture propres à ce lieu. Assurez-vous également de choisir des catégories pertinentes pour chaque fiche en fonction des services offerts à cet emplacement.
+                        <br></br>
+                        <br></br>
+                        En ayant des fiches distinctes et bien optimisées pour chaque site, vous maximisez la visibilité locale de chaque emplacement, permettant ainsi aux clients de trouver facilement le point de vente ou le service le plus proche de chez eux.
+                    </>
+                ),
+            },
+            {
+                question: "Comment puis-je améliorer les avis sur ma fiche Google ?",
+                answer: (
+                    <>
+                        Il est important d’encourager vos clients satisfaits à partager leur expérience en leur demandant directement après chaque service ou achat. Vous pouvez faciliter cela en leur fournissant un lien direct vers votre page d'avis.
+                        <br></br>
+                        <br></br>
+                        Répondre à tous les avis, qu'ils soient positifs ou négatifs, est crucial. Mettez la satisfaction de vos clients en priorité.
+                    </>
+                ),
+            },
+            {
+                question: "Que se passe-t-il si les informations de ma fiche changent ?",
+                answer: (
+                    <>
+                        Si les informations de votre fiche Google changent, il est crucial de les mettre à jour rapidement. Des informations incorrectes, comme un numéro de téléphone, une adresse, ou des horaires d'ouverture obsolètes, peuvent entraîner une mauvaise expérience pour vos clients. Ils risquent ainsi de ne pas vous trouver ou de renoncer à vous contacter. Google valorise les fiches précises et à jour, cela peut donc affecter votre référencement local. En maintenant vos informations à jour, vous assurez une meilleure visibilité et une expérience client optimale.
+                    </>
+                ),
+            },
+            {
+                question: "Pourquoi faire appel à un professionnel pour créer ma fiche Google ?",
+                answer: (
+                    <>
+                        Un expert saura configurer votre fiche en veillant à ce que toutes les informations soient complètes, précises et optimisées pour le référencement local. Cela inclut notamment le choix des bonnes catégories, l’ajout de mots-clés pertinents, et la publication d'une description engageante qui reflète votre entreprise.
+                        <br></br>
+                        <br></br>
+                        En ayant un expert à vos côtés, vous bénéficiez d’un gain de temps et d’un suivi lors de la prise en main de votre fiche. Cela garantit une visibilité optimale et une présence en ligne performante.
+                    </>
+                ),
+            },
+            {
+                question: "Quel est le coût de la création d'une fiche Google via votre service ?",
+                answer: (
+                    <>
+                        Nous proposons la création de votre fiche Google optimisée et un suivi avec un expert dédié à votre projet pour 99 € HT.
+                    </>
+                ),
+            },
+        ],
+    }
+
 
     return (
         <div>
@@ -421,16 +328,10 @@ export default function Home() {
             <SectionTestimonials {...testimonialsProps}/>
             <SectionResultat {...resultatProps}/>
             <SectionPrix {...priceProps} />
-
-
-            <SectionArguments {...argumentsProps}/>
-            <SectionCommunication {...communicationProps}/>
-            <SectionSolutions {...solutionsProps}/>
-            <SectionSteps {...stepsProp}/>
-            
             <SectionAvis {...avisProps} />
-            <SectionFAQ {...faqProps}/>
+            <SectionSteps {...stepsProp}/>
             <SectionContact />
+            <SectionFAQ {...faqProps}/>
         </div>
     );
 }

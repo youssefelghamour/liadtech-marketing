@@ -9,11 +9,14 @@ import FaqItem from "../FaqItem/FaqItem";
 
 class FAQ extends Component {
     render() {
+        // Only these two pages have a 2 columns grid where the first col conatins the question + img & background pic
+        const pagesWithTwoColumns = ['agence-facebook-ads', 'referencement-site-internet'];
+
         return (
-            // All pages besides the creation-site-internet page have a 2 columns grid where the first col conatins the question + img & background pic
-            <section className={`relative overflow-hidden bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem] ${this.props.page !== 'creation-site-internet' ? "grid lg:grid-cols-[1fr_1.5fr]" : ""}`}>
-                {/* Adding the left column that contains the question + image on pages other than the creaiton page */}
-                {this.props.page !== 'creation-site-internet'
+            <section className={`relative overflow-hidden bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem] ${pagesWithTwoColumns.includes(this.props.page) ? "grid lg:grid-cols-[1fr_1.5fr]" : ""}`}>
+                
+                {/* Adding the left column that contains the question + image on pages with 2 columns */}
+                {pagesWithTwoColumns.includes(this.props.page)
                     ? (
                         <>
                             {/* Absolute image moon background on the top left of the section */}
@@ -33,10 +36,11 @@ class FAQ extends Component {
                     : null
                 }
                 
+
                 {/* FAQ */}
                 <div className={`container mx-auto py-8 rounded-[2.5rem] space-y-4 ${this.props.page === 'creation-site-internet' ? "lg:max-w-[60%]" : "lg:max-w-[80%]"}`}>
-                    {/* Only the creation-site-internet page has this question on the top of the faq section */}
-                    {this.props.page === 'creation-site-internet' && (<p className="title text-center mb-10 font-black text-3xl italic">Une question ?</p>) }
+                    {/* Opages with 2 cols don't have this question on the top */}
+                    {!pagesWithTwoColumns.includes(this.props.page) && (<p className="title text-center mb-10 font-black text-3xl italic">Une question ?</p>) }
 
                     {/* Individual Question/Answer */}
                     {this.props.faqs.map(({ question, answer }, i) => (
@@ -48,8 +52,9 @@ class FAQ extends Component {
                     ))}
                 </div>
 
-                {/* This image is visible on pages other than creation-site-internet when screens less than medium width on the bottom left of the section */}
-                {this.props.page !== 'creation-site-internet' && (<img src="/liadtech-robot.png" alt="liadtech-robt" className="-ml-20 -mb-15 lg:hidden md:block max-w-100 max-h-100"/>)}
+
+                {/* This image is visible on pages with 2 cols when screens less than medium width on the bottom left of the section */}
+                {pagesWithTwoColumns.includes(this.props.page) && (<img src="/liadtech-robot.png" alt="liadtech-robt" className="-ml-20 -mb-15 lg:hidden md:block max-w-100 max-h-100"/>)}
             </section>
         );
     }
