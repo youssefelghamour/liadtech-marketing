@@ -114,7 +114,8 @@ export default function Home() {
         p: "De la création de votre stratégie au suivi des statistiques, un chargé de projet prend en charge de A à Z vos campagnes.",
     };
     
-    const prixProps = {
+    // prixProps: Solutions section includes the price section
+    const solutionsProps = {
         page: 'ads',
         titleMiddle: true,
         pretitle: "Votre agence experte en social media",
@@ -122,6 +123,10 @@ export default function Home() {
         highlight: "solution ",
         title2: "LIADTECH",
         p: "Nous vous conseillons sur la meilleure stratégie à mettre en place pour atteindre vos objectifs.",
+        prixProps: {
+            price: 289,
+            p: "Transformez la manière dont vous attirez des clients.",
+        },
     }
 
     const faqProps = {
@@ -321,7 +326,7 @@ export default function Home() {
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
             <SectionResultat {...resultatProps2}/>
-            <SectionSolutions {...prixProps}/>
+            <SectionSolutions {...solutionsProps}/>
             <SectionResultat {...resultatProps}/>
             <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>

@@ -87,6 +87,7 @@ export default function Home() {
         p: "Nous avançons avec vous pour accroître la visibilité de votre entreprise sur Google.",
     };
 
+    // prixProps: Solutions section includes the price section
     const solutionsProps = {
         page: 'referencement',
         titleMiddle: true,
@@ -112,6 +113,10 @@ export default function Home() {
                 description: "La facilité et la sécurité en un tour de main.",
             },
         ],
+        prixProps: {
+            price: 96,
+            p: "La base pour être visible sur le web.",
+        },
     };
 
     const stepsProp = {

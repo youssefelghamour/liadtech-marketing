@@ -9,7 +9,7 @@ export default function SectionSolutions(props) {
             <Title {...props} />
 
             {/* Second Section PRICING */}
-            <SectionPrix {...props} />
+            <SectionPrix {...props.prixProps} />
 
             {/* Third section: ads page doesn't have the solutions section */}
             {props.page !== 'ads' && 

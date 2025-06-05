@@ -78,6 +78,7 @@ export default function Home() {
         ],
     };
 
+    // prixProps: Solutions section includes the price section
     const solutionsProps = {
         page: 'referencement',
         titleMiddle: true,
@@ -103,6 +104,10 @@ export default function Home() {
                 description: "Nous définissons les meilleurs sites pour vous recommander et créons entre 8 et 16 liens renvoyant vers votre site internet.",
             },
         ],
+        prixProps: {
+            price: 249,
+            p: "Escaladez facilement les résultats de recherche Google !",
+        },
     };
 
     const stepsProp = {
