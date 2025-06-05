@@ -15,7 +15,7 @@ export default function SectionResultat(props) {
 
             {/* Right */}
             {props.img 
-                ? (<img src={props.img} alt="liadtech robot" className="w-full max-w-[650px] h-auto mx-auto"/>)
+                ? (<img src={props.img} alt="liadtech robot" className="w-full max-w-[650px] h-auto mx-auto rounded-lg"/>)
                 : (
                     <div className="flex flex-col-reverse md:flex-row bg-[var(--purple-light-2)] justify-evenly rounded-lg px-5 relative overflow-hidden">
                         <div className="pt-6 px-6 lg:px-8 pb-10 border-[1px] border-[var(--purple-border)] rounded-2xl self-center md:bg-transparent bg-white max-w-[360px] mx-auto lg:mx-0 md:mb-0 mb-10">

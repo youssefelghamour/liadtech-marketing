@@ -115,6 +115,7 @@ export default function Home() {
             },
         ],
         prixProps: {
+            page: 'creation-site-internet',
             price: 96,
             p: "La base pour être visible sur le web.",
         },

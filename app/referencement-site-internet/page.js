@@ -105,6 +105,7 @@ export default function Home() {
             },
         ],
         prixProps: {
+            page: 'referencement-site-internet',
             price: 249,
             p: "Escaladez facilement les résultats de recherche Google !",
         },

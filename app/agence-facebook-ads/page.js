@@ -124,6 +124,7 @@ export default function Home() {
         title2: "LIADTECH",
         p: "Nous vous conseillons sur la meilleure stratégie à mettre en place pour atteindre vos objectifs.",
         prixProps: {
+            page: 'agence-facebook-ads',
             price: 289,
             p: "Transformez la manière dont vous attirez des clients.",
         },

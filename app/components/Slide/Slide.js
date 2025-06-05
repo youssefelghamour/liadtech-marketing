@@ -28,6 +28,10 @@ export default function Slide(props) {
                 <p className="mt-2 text-gray-500 text-xs font-extrabold tracking-[1.44px] uppercase">
                     {props.speciality}
                 </p>
+
+                <p className="mt-2">
+                    {props.description}
+                </p>
             </div>
         </div>
     );

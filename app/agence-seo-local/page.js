@@ -12,6 +12,7 @@ import SectionTestimonials from "../components/SectionTestimonials/SectionTestim
 import SectionContact from "../components/SectionContact/SectionContact";
 import SectionAvis from "../components/SectionAvis/SectionAvis";
 import SectionResultat2 from "../components/SectionResultat/SectionResultat2";
+import SectionPrix from "../components/SectionPrix/SectionPrix";
 
 
 export const metadata = {
@@ -30,14 +31,14 @@ export default function Home() {
         button: "Découvrir nos offres",
     };
 
-    const resultatProps = {
+    const resultatProps2 = {
         page: 'agence-seo-local',
         pretitle: "Référencez votre fiche Google Maps",
         title: "Être visible en ligne, ",
         highlight: "c’est difficile",
         p: "Lorsqu’un de vos clients recherche un professionnel, Google va lui proposer systématiquement des résultats de recherche Google Maps, PUIS mettre en avant les sites internet.",
         p2: "Même avec le meilleur site du monde et une stratégie de référencement impeccable, si votre fiche Google est à la traîne, vos concurrents passeront devant vous.",
-        img: '/resultat-pic.png',
+        img: '/resultat-pic-1.png',
         items: [
             {
                 title: "Faites de votre établissement LA référence dans votre domaine",
@@ -53,6 +54,65 @@ export default function Home() {
             },
         ],
     };
+    
+    const testimonialsProps = {
+        pretitle: "Améliorer son positionnement local",
+        titleMiddle: true,
+        highlight: "Augmentez",
+        title2: " votre visibilité locale",
+        items: [
+            {
+                image: "/slide-4.jpg",
+                title: "Plus de visiteurs",
+                description: "Positionnez votre entreprise dans les premières propositions sur Google Maps et attirez de nouveaux visiteurs dans votre entreprise.",
+            },
+            {
+                image: "/slide-5.jpg",
+                title: "Plus de crédibilité",
+                description: "Nos équipes s'occupent pour vous de la modification de votre fiche d'établissement pour améliorer votre capital confiance.",
+            },
+            {
+                image: "/slide-6.jpg",
+                title: "Plus de clients",
+                description: "Multipliez vos opportunités commerciales grâce à une stratégie qui attire des visiteurs intéressés dans votre boutique.",
+            },
+        ],
+    };
+
+    const resultatProps = {
+        page: 'agence-seo-local',
+        pretitle: "Augmentation de votre trafic local",
+        title: "Pour chaque objectif, une solution ",
+        highlight: "LIADTECH",
+        p: "Donnez la meilleure première impression avec votre carte de visite en ligne",
+        img: '/resultat-pic-2.jpg',
+        items: [
+            {
+                title: "Accompagnement personnalisé avec un expert dédié",
+                description: "Pour comprendre vos besoins et répondre à vos attentes.",
+            },
+            {
+                title: "Élaboration de votre stratégie de référencement",
+                description: "Pour booster votre visibilité locale, tout est pensé pour mettre en avant vos informations.",
+            },
+            {
+                title: "Création de votre fiche Google",
+                description: "Si vous n’avez pas de fiche d’établissement, les équipes LIADTEACH s’occupent pour vous de la création de votre fiche Google.",
+            },
+            {
+                title: "Livraison de 2 cartes NFC",
+                description: "Récoltez facilement des avis clients grâce à des cartes NFC Google. Vos clients n’auront qu’à poser leur téléphone dessus pour laisser un avis !",
+            },
+        ],
+    };
+
+    const priceProps = {
+        page: "agence-seo-local",
+        price: 99,
+        p: "Choisissez la bonne manière pour attirer des clients",
+    };
+
+
 
     const argumentsProps = {
         page: 'agence-seo-local',
@@ -190,32 +250,7 @@ export default function Home() {
         },
     };
 
-    const testimonialsProps = {
-        pretitle: "Ils ont propulsé leur activité",
-        titleMiddle: true,
-        title: "Des résultats significatifs pour leur ",
-        highlight: "agence-seo-local",
-        items: [
-            {
-                image: "/slide-1.jpg",
-                title: "En première position sur “Couvreur 93”",
-                company: "AMC Couverture",
-                speciality: "Artisan couvreur",
-            },
-            {
-                image: "/slide-2.jpg",
-                title: "1ère position sur “Médecine ésthétique”",
-                company: "CMEG",
-                speciality: "Médecine ésthétique",
-            },
-            {
-                image: "/slide-3.jpg",
-                title: "TOP 3 Google sur son activité",
-                company: "A2 Services",
-                speciality: "Nettoyage et entretien",
-            },
-        ],
-    };
+    
 
     const faqProps = {
         page: "agence-seo-local",
@@ -382,14 +417,17 @@ export default function Home() {
     return (
         <div>
             <Hero {...heroProps}/>
-            <SectionResultat2 {...resultatProps}/>
+            <SectionResultat2 {...resultatProps2}/>
+            <SectionTestimonials {...testimonialsProps}/>
+            <SectionResultat {...resultatProps}/>
+            <SectionPrix {...priceProps} />
 
 
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
             <SectionSolutions {...solutionsProps}/>
             <SectionSteps {...stepsProp}/>
-            <SectionTestimonials {...testimonialsProps}/>
+            
             <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>
             <SectionContact />
