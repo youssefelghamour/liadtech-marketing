@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function SectionPrix(props) {
     return (
-        <div className="relative overflow-hidden min-h-30 flex flex-col items-center justify-center rounded-lg p-10 py-30 text-center mt-12 bg-[var(--light-blue)] lg:w-[85%] mx-auto">
+        <div className="relative overflow-hidden min-h-30 flex flex-col items-center justify-center rounded-lg p-10 py-30 text-center mt-12 bg-[var(--light-blue)] lg:w-[85%] mx-auto border-[1px] border-[var(--light-blue-border)]">
             <div className="absolute left-0 top-0 bg-[url('/faq-bg.png')] [filter:brightness(1.7)] bg-no-repeat bg-contain opacity-30 w-[1400px] h-[1400px]" />
             
             <p className="font-medium  z-[1]">À partir de</p>
