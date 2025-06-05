@@ -9,7 +9,7 @@ export default function SectionResultat(props) {
             {/* Left */}
             <div>
                 <Title {...props} />
-                <BulletPoints {...props}/>
+                {props.items && <BulletPoints {...props}/> }
                 <button className="mt-10 py-3 px-4 hover:px-5 rounded-full font-extrabold flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--purple)] border-2 border-[var(--purple)] w-max">Prendre rendez-vous &nbsp; <FaArrowRight /> </button>
             </div>
 
@@ -22,7 +22,7 @@ export default function SectionResultat(props) {
                             <p className="italic font-medium text-[20px] leading-[120%] text-center lg:text-left">“Je multiplie vos opportunités commerciales grâce au SEO”</p>
                             <p className="uppercase font-bold text-[14px] text-center lg:text-left mt-5">employee - role</p>
                         </div>
-                        <img src='/liadtech-robot.png' alt="liadtech robot" className="max-w-[300px] h-[400px] w-full mx-auto lg:mr-0"/>
+                        <img src='/hero-pic-6.png' alt="liadtech robot" className="max-w-[350px] h-[350px] w-full mx-auto lg:mr-0"/>
                     </div>
                 )
             }

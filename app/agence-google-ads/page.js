@@ -86,38 +86,116 @@ export default function Home() {
         ],
     };
 
+    const resultatProps = {
+        page: 'agence-google-ads',
+        pretitle: "Des campagnes gérées par des experts SEA",
+        title: "Un ",
+        highlight: "expert",
+        title2: " en référencement dédié à votre projet",
+        p: "Pour vous assurer les meilleurs résultats, un référenceur Aleo prend en charge de A à Z votre campagne.",
+    };
+
+
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
         page: 'agence-google-ads',
         titleMiddle: true,
-        pretitle: "L'agence des pros",
-        title: "Notre plan pour vous placer au",
-        highlight: "top",
-        p: "Nous intervenons sur tous les aspects du référencement naturel pour vous emmener au sommet !",
+        pretitle: "Le référencement payant accessible à tous les pros",
+        title: "Pour chaque objectif, une ",
+        highlight: "solution ",
+        title2: 'LIADTECH',
+        p: "Avec LIADTECH, votre budget publicitaire est inclus dans votre offre. Mettez le cap sur votre visibilité avec une solution publicitaire clé en main !",
+        img: '/solutions-pic-1.png',
         items: [
             {
-                title: "Rédaction de pages optimisées pour le SEO",
-                description: "Nos rédacteurs créent sur votre site internet des pages optimisées pour grimper dans les résultats de recherche Google.",
+                title: "Accompagnement complet avec un expert dédié",
+                description: "Pour un suivi sur-mesure et personnalisé dédié à votre activité.",
             },
             {
-                title: "Optimisation de l’existant",
-                description: "Nos équipes retravaillent et optimisent le contenu déjà existant sur votre site internet.",
+                title: "Choix des meilleurs mots-clés en fonction de votre activité",
+                description: "Pour garantir le meilleur retour sur investissement, nous définissons les mots-clés les mieux adaptés.",
             },
             {
-                title: "Amélioration des performances",
-                description: "Améliorez votre popularité aux yeux de Google en étant recommandé par des sites de confiance.",
+                title: "Création de campagnes et annonces percutantes",
+                description: "Pour être dans les meilleurs résultats Google rapidement.",
             },
             {
-                title: "Stratégie de popularité",
-                description: "Nous définissons les meilleurs sites pour vous recommander et créons entre 8 et 16 liens renvoyant vers votre site internet.",
+                title: "Suivi de vos campagnes en temps réel",
+                description: "Mesurez l'efficacité de vos campagnes facilement et rapidement avec notre outil de suivi.",
             },
         ],
         prixProps: {
             page: 'agence-google-ads',
-            price: 249,
-            p: "Escaladez facilement les résultats de recherche Google !",
+            price: 149,
         },
     };
+
+    const avisProps = {
+        page: 'agence-google-ads',
+        titleMiddle: true,
+        pretitle: "L’avis de nos clients",
+        title: "Plus de",
+        highlight: " 15 000 ",
+        title2: "entrepreneurs nous font confiance",
+        p: "Artisans, créateurs, indépendants...",
+        avis: [
+            {
+                client: "Met'Propre Nettoyage",
+                review: "Une belle communication avec beaucoup de professionnalisme.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Agence Immobilière Rabat Plus",
+                review: "Service impeccable et communication rapide. Leur travail a vraiment boosté notre visibilité en ligne.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Entreprise CCZ",
+                review: "L'équipe LIADTECH a su parfaitement répondre à mes attentes !",
+                rating: "★★★★★",
+            },
+            {
+                client: "Restaurant Dar Zaki - Marrakech",
+                review: "L'équipe a su capter l'esprit marocain tout en modernisant notre image. Très professionnelle et à l’écoute.",
+                rating: "★★★★★",
+            },
+            {
+                client: "LAURENCE FERRY",
+                review: "Equipe sympathique. La créativité sur les publications est top ! J'apprécie le fait qu'on nous demande si on a du contenu à mettre en avant, ça permet d'être au plus proche de notre métier. Je suis satisfaite.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Société Atlas Médical - Casablanca",
+                review: "Collaboration fluide et résultats au-delà de nos attentes. Leur expertise locale fait toute la différence.",
+                rating: "★★★★★",
+            },
+            {
+                client: "Coopérative d’Arganier Essaouira",
+                review: "Une équipe passionnée qui comprend les spécificités du marché local. Je recommande vivement leurs services.",
+                rating: "★★★★★",
+            },
+        ],
+        reviews: [
+            {
+                img: "/avis-pic-1.jpg",
+                name: "Full Name - Gérante",
+                quote: "Une équipe très réactive qui a pris en main mes campagnes réseaux sociaux avec agilité...",
+            },
+            {
+                img: "/avis-pic-2.jpg",
+                name: "Example Name - Directeur",
+                quote: "Un accompagnement personnalisé et efficace. Merci !",
+            },
+            {
+                img: "/slide-2.jpg",
+                name: "Another Name - CEO",
+                quote: "Professionnels, à l'écoute et très efficaces.",
+            },
+        ],
+    };
+
+
+
 
     const stepsProp = {
         page: 'agence-google-ads',
@@ -172,28 +250,6 @@ export default function Home() {
                 },
             ],
         },
-    };
-
-    const resultatProps = {
-        page: 'agence-google-ads',
-        pretitle: "Analyser les performances de sa stratégie SEO",
-        title: "Transparence et",
-        highlight: "résultat",
-        p: "Parce que les résultats du SEO se font sur le moyen et long terme, nos référenceurs agissent en toute transparence sur votre site internet.",
-        items: [
-            {
-                title: "Suivi des appels",
-                description: "Observez en temps réel le retour sur investissement de votre stratégie SEO.",
-            },
-            {
-                title: "Rapport en ligne",
-                description: "Suivez en temps réel les performances de votre référencement naturel.",
-            },
-            {
-                title: "Un chargé de projet SEO dédié",
-                description: "Bénéficiez des conseils et du savoir-faire d’un expert SEO dédié à votre projet.",
-            },
-        ],
     };
 
     const testimonialsProps = {
@@ -320,81 +376,18 @@ export default function Home() {
         ],
     }
 
-    const avisProps = {
-        page: 'agence-google-ads',
-        titleMiddle: true,
-        pretitle: "L’avis de nos clients",
-        title: "Plus de",
-        highlight: " 15 000 ",
-        title2: "entrepreneurs nous font confiance",
-        p: "Artisans, créateurs, indépendants...",
-        avis: [
-            {
-                client: "Met'Propre Nettoyage",
-                review: "Une belle communication avec beaucoup de professionnalisme.",
-                rating: "★★★★★",
-            },
-            {
-                client: "Agence Immobilière Rabat Plus",
-                review: "Service impeccable et communication rapide. Leur travail a vraiment boosté notre visibilité en ligne.",
-                rating: "★★★★★",
-            },
-            {
-                client: "Entreprise CCZ",
-                review: "L'équipe LIADTECH a su parfaitement répondre à mes attentes !",
-                rating: "★★★★★",
-            },
-            {
-                client: "Restaurant Dar Zaki - Marrakech",
-                review: "L'équipe a su capter l'esprit marocain tout en modernisant notre image. Très professionnelle et à l’écoute.",
-                rating: "★★★★★",
-            },
-            {
-                client: "LAURENCE FERRY",
-                review: "Equipe sympathique. La créativité sur les publications est top ! J'apprécie le fait qu'on nous demande si on a du contenu à mettre en avant, ça permet d'être au plus proche de notre métier. Je suis satisfaite.",
-                rating: "★★★★★",
-            },
-            {
-                client: "Société Atlas Médical - Casablanca",
-                review: "Collaboration fluide et résultats au-delà de nos attentes. Leur expertise locale fait toute la différence.",
-                rating: "★★★★★",
-            },
-            {
-                client: "Coopérative d’Arganier Essaouira",
-                review: "Une équipe passionnée qui comprend les spécificités du marché local. Je recommande vivement leurs services.",
-                rating: "★★★★★",
-            },
-        ],
-        reviews: [
-            {
-                img: "/avis-pic-1.jpg",
-                name: "Full Name - Gérante",
-                quote: "Une équipe très réactive qui a pris en main mes campagnes réseaux sociaux avec agilité...",
-            },
-            {
-                img: "/avis-pic-2.jpg",
-                name: "Example Name - Directeur",
-                quote: "Un accompagnement personnalisé et efficace. Merci !",
-            },
-            {
-                img: "/slide-2.jpg",
-                name: "Another Name - CEO",
-                quote: "Professionnels, à l'écoute et très efficaces.",
-            },
-        ],
-    };
-
 
     return (
         <div>
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
-            <SectionSolutions {...solutionsProps}/>
             <SectionResultat {...resultatProps}/>
+            <SectionSolutions {...solutionsProps}/>
+            <SectionAvis {...avisProps} />
+            
             <SectionSteps {...stepsProp}/>
             <SectionTestimonials {...testimonialsProps}/>
-            <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>

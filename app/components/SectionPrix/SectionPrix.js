@@ -31,9 +31,11 @@ export default function SectionPrix(props) {
                         </div>
                     </div>
 
-                    <p className="font-medium mt-6  z-[1]">
-                        {props.p}
-                    </p>
+                    {props.p &&
+                        <p className="font-medium mt-6  z-[1]">
+                            {props.p}
+                        </p>
+                    }
 
                     <button className="mt-10 py-3 px-4 hover:px-5 rounded-full font-extrabold flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--purple)] border-2 border-[var(--purple)] w-max z-[1]">
                         Je lance mon projet &nbsp; <FaArrowRight />
