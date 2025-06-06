@@ -31,14 +31,14 @@ class Card extends Component {
                 </div>
 
                 <div className="px-15 w-full lg:w-2/3 p-6 flex flex-col self-center">
-                    <p className="italic font-bold text-[24px] xl:text-[32px] 2xl:text-[40px] leading-[120%] text-[var(--purple)] text-left">
+                    <p className="italic font-bold text-[24px] xl:text-[32px] 2xl:text-[40px] leading-[120%] text-[var(--dark-blue)] text-left">
                         “{element.quote}”
                     </p>
 
                     <div className="mt-10 flex flex-wrap gap-y-6 justify-between items-center">
                         <p className="text-xs font-extrabold leading-[150%] tracking-[0.12em] uppercase text-purple-brand">{element.name}</p>
                         
-                        <a href={element.link} className="py-3 px-4 hover:px-5 rounded-full font-extrabold flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--purple)] border-2 border-[var(--purple)] w-max">
+                        <a href={element.link} className="py-3 px-4 hover:px-5 rounded-full font-extrabold flex justify-center items-center text-sm lg:text-base transition-all duration-300 cursor-pointer text-white bg-[var(--dark-blue)] border-2 border-[var(--dark-blue)] w-max">
                             Voir l’étude de cas &nbsp; <FaArrowRight />
                         </a>
                     </div>

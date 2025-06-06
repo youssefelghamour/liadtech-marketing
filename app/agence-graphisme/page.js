@@ -133,10 +133,47 @@ export default function Home() {
         },
     };
 
+    const stepsProp = {
+        page: 'agence-graphisme',
+        pretitle: "Le design graphique chez LIADTECH",
+        title: "Comment ça ",
+        highlight: "marche ?",
+        steps: {
+            right: [
+                {
+                    step: 1,
+                    title: "Prise de brief",
+                    description: "Afin de créer une image qui vous ressemble, définissez vos objectifs et vos critères avec un expert LIADTECH.",
+                    image: "/step-1.jpg",
+                },
+                {
+                    step: 3,
+                    title: "Validation de votre logo",
+                    description: "Nous effectuons des retouches sur la proposition que vous préférez pour que votre logo vous corresponde parfaitement.",
+                    image: "/step-3.jpg",
+                },
+            ],
+            left: [
+                {
+                    step: 2,
+                    title: "Création de votre logo et de vos visuels",
+                    description: "2 pistes de logos vous sont proposées pour que vous puissiez choisir celle qui correspond le mieux à votre activité.",
+                    image: "/step-2.jpg",
+                },
+                {
+                    step: 4,
+                    title: "Livraison des différents formats",
+                    description: "Avec votre nouveau logo, mettez-en plein la vue à vos clients (et futurs clients) !",
+                    image: "/step-4.jpg",
+                },
+            ],
+        },
+    };
+
     const avisProps = {
-        page: 'agence-google-ads',
+        page: 'agence-graphisme',
         titleMiddle: true,
-        pretitle: "L’avis de nos clients",
+        pretitle: "Les avis des clients LIADTECH, votre agence de communication digitale",
         title: "Plus de",
         highlight: " 15 000 ",
         title2: "entrepreneurs nous font confiance",
@@ -180,9 +217,9 @@ export default function Home() {
         ],
         reviews: [
             {
-                img: "/avis-pic-1.jpg",
+                img: "/avis-pic-4.jpg",
                 name: "Full Name - Gérante",
-                quote: "Une équipe très réactive qui a pris en main mes campagnes réseaux sociaux avec agilité...",
+                quote: "Ils ont été très réactifs et on su me proposer ce qui correspondait exactement à mon besoin.",
             },
             {
                 img: "/avis-pic-2.jpg",
@@ -190,199 +227,146 @@ export default function Home() {
                 quote: "Un accompagnement personnalisé et efficace. Merci !",
             },
             {
-                img: "/slide-2.jpg",
+                img: "/avis-pic-3.jpg",
                 name: "Another Name - CEO",
-                quote: "Professionnels, à l'écoute et très efficaces.",
+                quote: "Une collaboration au top depuis plusieurs années ! Si vous êtes à la recherche d'une agence réactive, LIADTECH est celle qu'il vous faut. Des experts de la communication qui proposent des prestations toujours adaptées à mes besoins.",
             },
         ],
-    };
-
-    const stepsProp = {
-        page: 'agence-google-ads',
-        pretitle: "Nos experts SEO vous accompagnent de A à Z",
-        title: "Comment ça ",
-        highlight: "marche ?",
-        steps: {
-            right: [
-                {
-                    step: 1,
-                    title: "Étude de votre activité",
-                    description: "Analyse de vos cibles, de votre zone géographique et de votre entreprise.",
-                    image: "/step-1.jpg",
-                },
-                {
-                    step: 3,
-                    title: "Création de vos campagnes",
-                    description: "Choix des mots-clés et rédaction d’annonces percutantes pour assurer votre visibilité.",
-                    image: "/step-3.jpg",
-                },
-                {
-                    step: 5,
-                    title: "Étude détaillée des contacts générés par vos campagnes",
-                    description: "Étude des appels, des formulaires mails et des autres moyens mis en place pour obtenir de nouveaux clients.",
-                    image: "/step-5.jpg",
-                },
-            ],
-            left: [
-                {
-                    step: 2,
-                    title: "Préparation de votre page de destination",
-                    description: "Sur votre site ou créée et optimisée par nos soins et adaptée à votre cible pour générer un maximum de contacts.",
-                    image: "/step-2.jpg",
-                },
-                {
-                    step: 4,
-                    title: "Gestion et suivi",
-                    description: "Points téléphoniques avec le référenceur dédié à vos campagnes et analyse de vos rapports statistiques.",
-                    image: "/step-4.jpg",
-                },
-            ],
-        },
     };
 
     const faqProps = {
         page: "agence-google-ads",
         faqs : [
             {
-                question: "Pourquoi devrais-je confier ma campagne Google ads à une agence ?",
+                question: "Quelles sont les étapes de la conception de mon logo ?",
                 answer: (
                     <>
-                        En qualité d'agence web experte en Google ads et titulaire de la certification Google Partners, nous déployons notre savoir-faire stratégique et opérationnel dans la gestion de vos campagnes ads.
+                        La réalisation de votre logo par notre studio graphique débute par un entretien approfondi permettant de collecter les informations indispensables à la création de vos éléments graphiques. Cette compréhension précise de votre univers et de votre stratégie de communication nous permet ensuite de réaliser des maquettes de logos qui traduisent fidèlement votre identité d'entreprise.
                         <br />
                         <br />
-                        Notre maîtrise de l'optimisation des conversions publicitaires vous assure une visibilité accrue sur les moteurs de recherche grâce à notre expertise en référencement payant (SEA). Nous ajustons votre campagne publicitaire selon vos objectifs, maximisons le taux de conversion, optimisons le coût par clic (CPC) et nous assurons un suivi rigoureux de vos KPI pour une gestion optimale de votre budget.
-                        <br />
-                        <br />
-                        En nous confiant votre campagne Google ads, vous bénéficiez d'une expertise reconnue et d'un suivi personnalisé par nos consultants SEA afin de garantir l’efficacité de vos campagnes publicitaires.
+                        Suite à la réception des propositions de visuels, vous pouvez demander d'éventuelles modifications pour peaufiner le logo à votre image. Après validation, nous finalisons le design et vous envoyons votre logo sous différents formats par email. De la sorte, notre processus garantit un logo professionnel, sur-mesure et parfaitement en phase avec vos attentes.
                     </>
                 ),
             },
             {
-                question: "Quelles sont les étapes de la création de ma campagne Google ads avec LIADTECH ?",
+                question: "Dois-je envisager une refonte de ma communication visuelle ?",
                 answer: (
                     <>
-                        Chez LIADTECH, la mise en place de votre campagne ads se fait en trois étapes cruciales. Dans un premier temps, nous nous imprégnons de votre activité, étudions vos points forts et définissons vos objectifs webmarketing pour identifier différentes opportunités de croissance sur Google. Selon vos besoins, nous créons une landing page spécifiquement optimisée pour votre campagne, conçue pour maximiser le taux de conversion et optimiser le coût par clic (CPC).
+                        La refonte de votre communication visuelle peut s'avérer nécessaire et bénéfique. Dans un contexte en constante mutation, une identité visuelle actualisée aide à conserver la pertinence et l'attractivité de votre marque. Il est crucial que votre identité graphique représente votre entreprise telle qu'elle est aujourd'hui, et non comme elle était lors de sa fondation.
                         <br />
                         <br />
-                        Ensuite, nous sélectionnons les mots-clés les plus pertinents pour votre campagne et déployons une stratégie ads robuste en diffusant des annonces textuelles pour afficher votre message publicitaire sur Google. Le tout est géré par nos consultants SEA, assurant le succès de votre campagne. Nous veillons à ce que votre campagne soit le reflet fidèle de votre activité pour atteindre vos objectifs.
+                        Une agence de communication visuelle telle que la nôtre propose la création et la mise à jour d'identités graphiques. Que ce soit pour la création d'un nouveau logo, ou la modernisation de vos supports de communication, nous sommes en mesure de vous accompagner dans cette démarche. Cela contribuera à renforcer votre image de marque, améliorer votre visibilité et, par conséquent, attirer et fidéliser vos clients.
+                    </>
+                ),
+            },
+            {
+                question: "Pourquoi solliciter une agence de graphisme pour la création de son logo et de ses cartes de visite ?",
+                answer: (
+                    <>
+                        Solliciter une agence de communication spécialisée en création graphique, comme la nôtre, pour élaborer votre logo et vos cartes de visite est une démarche primordiale. En effet, ces éléments graphiques essentiels, conçus par des graphistes professionnels, sont les vecteurs de vos valeurs et vous démarquent de vos concurrents.
                         <br />
                         <br />
-                        LIADTECH est à votre service pour faire de votre campagne Google ads une réussite.                        
+                        Notre agence de graphisme garantit également une cohérence parfaite entre tous vos outils de communication, grâce à des chartes graphiques soigneusement établies. De ce fait, choisir notre studio de création graphique assure une direction artistique maîtrisée et une stratégie de communication graphique efficace, renforçant ainsi votre identité de marque.                        
                     </>
                 ),
             },
             {
-                question: "J'ai déjà un compte Google ads, comment confier mes campagnes SEA à LIADTECH ?",
+                question: "En quoi un studio de création graphique peut-il rehausser mon image ?",
                 answer: (
                     <>
-                        Si vous avez déjà un compte Google ads et que vous désirez nous confier la gestion de vos campagnes SEA, le processus est simple. Plutôt que de reprendre vos campagnes existantes, nous préférons en créer de nouvelles pour repartir sur des bases solides et optimisées.
+                        Un studio de création graphique, comme le nôtre, joue un rôle déterminant dans l'évolution et le renforcement de votre image de marque. Il forge votre identité graphique, comprenant votre logo, votre charte graphique et votre univers visuel, ces éléments distinctifs qui différencient votre marque sur le marché.
                         <br />
                         <br />
-                        En faisant appel à notre agence certifiée Google Partners, vous bénéficiez d'une campagne entièrement adaptée à vos besoins et à vos objectifs. Nos consultants SEA vous offrent un suivi personnalisé, garantissant la réussite de votre nouvelle campagne.                        
+                        De plus, il assure une cohérence visuelle sur tous vos supports de communication, de votre site internet aux réseaux sociaux, améliorant ainsi votre visibilité et crédibilité. Grâce à la direction artistique et la communication visuelle, votre message et vos valeurs sont véhiculés de manière efficace, permettant de créer une expérience visuelle captivante pour vos clients.                        
                     </>
                 ),
             },
             {
-                question: "Qu'est-ce qu'une agence certifiée Google Partner ?",
+                question: "Quels types de projets graphiques pouvez-vous réaliser ?",
                 answer: (
                     <>
-                        Une agence certifiée Google Partner est une entreprise reconnue par Google pour son expertise et sa compétence en gestion de l’outil Google ads. Cette certification atteste de notre capacité à mener avec efficacité des campagnes publicitaires en ligne, tout en respectant les standards de performance fixés par Google.
-                        <br></br>     
-                        <br></br>
-                        En tant qu'agence Google Partner, nous avons accès à des formations avancées et à un support technique dédié, nous permettant de rester à la pointe des dernières tendances en marketing digital.
-                        <br></br>     
-                        <br></br>
-                        Grâce à Google Analytics et Matomo, nous suivons le comportement des visiteurs sur votre site internet et optimisons les pages de destination pour améliorer les conversions. Nous utilisons également les données Analytics pour mesurer le retour sur investissement (ROI) de votre campagne de référencement payant.
-                        <br></br>     
-                        <br></br>
-                        En choisissant notre agence pour votre campagne Google ads, vous faites le choix de l'expertise et de la qualité, pour une stratégie digitale performante et adaptée à vos besoins.
+                        L’agence LIADTECH s’occupe de la plupart des projets de création graphique des entrepreneurs. Nos experts s’occupent de la conception de logos, de cartes de visites, de plaquettes, de dépliants et de flyers. Tous les projets graphiques sont gérés par des graphistes experts dans leur domaine qui vous accompagneront au mieux pour vous faire ressortir aux yeux de vos clients. Pour toute autre demande, vous pouvez prendre rendez-vous avec un de nos experts afin d’obtenir un devis !
                     </>
                 ),
             },
             {
-                question: "C’est quoi l’objectif d’une campagne Google Ads ?",
+                question: "En combien de temps recevrais-je ma réalisation ?",
                 answer: (
                     <>
-                        L’objectif principal d’une campagne Google Ads est d’attirer du trafic qualifié sur votre site et de générer des demandes de contact. Une campagne bien optimisée vous permettra de rendre plus visible vos produits ou services aux yeux de vos prospects. En choisissant des mots-clés pertinents, vous améliorerez votre visibilité sur Google notamment en étant positionné dans les premiers résultats de la SERP.
-                        <br></br>
-                        <br></br>
-                        Pour avoir les meilleurs résultats possibles, le mieux est de passer par une agence Google Ads certifiée Google Partner.
+                        Nos experts s’engagent à vous livrer une première maquette 15 jours après la signature de votre contrat. Cette maquette sera à valider par vos soins pour que nous puissions effectuer différentes retouches afin que votre création vous convienne au mieux. Pour les créations graphiques à imprimer, nous prenons en charge l’impression et la livraison de votre création. Les délais de livraison varieront en fonction de votre secteur géographique.
                     </>
                 ),
             },
             {
-                question: "Comment fonctionne une agence SEA ?",
+                question: "Quelle est la procédure à suivre pour commencer un projet de design graphique avec votre agence ?",
                 answer: (
                     <>
-                        Une agence SEA est une agence spécialisée dans la gestion des campagnes de publicités payantes sur les moteurs de recherche (particulièrement Google). Elle analyse vos besoins, définit les objectifs de votre campagne et va concevoir et optimiser des annonces pour qu’elles apparaissent au bon moment, au bon endroit et devant la bonne audience.
-                        <br></br>
-                        <br></br>
-                        Elle effectuera des ajustements réguliers pour vous garantir les meilleures performances en respectant votre budget.
-                        <br></br>
-                        <br></br>
-                        Pour gérer au mieux l’efficacité des campagnes et assurer une meilleure flexibilité, les agences SEA utilisent très souvent le moyen de paiement de leurs clients.
+                        Lorsque vous décidez de passer par LIADTECH pour prendre en charge votre projet de création graphique, vous allez être contacté pour la mise en place de votre projet. Pendant cet appel, un conseiller vous posera différentes questions pour bien comprendre tous les contours de votre projet. Ce conseiller vous demandera par exemple les couleurs que vous souhaitez, votre slogan, la présentation de votre entreprise, les textes que vous souhaitez mettre en avant, etc.
+                        <br />
+                        <br />
+                        Si vous n’avez pas d’idée précise concernant votre projet, nos équipes graphiques vous feront différentes propositions pour que vous puissiez avoir un aperçu des différentes possibilités.                        
                     </>
                 ),
             },
             {
-                question: "Quel budget pour une campagne Google Ads ?",
+                question: "Puis-je voir des exemples de projets graphiques que vous avez réalisés pour d'autres clients ?",
                 answer: (
                     <>
-                        Le budget d’une campagne Google Ads varie selon vos objectifs, votre secteur et l’intensité de la concurrence. Votre budget dépendra du Coût par Clic (CPC) des mots clés que vous ciblez.
-                        <br></br>
-                        <br></br>
-                        Pour savoir quels mots-clés cibler et quel budget allouer à votre campagne, le mieux est de faire appel à une agence Google Ads certifiée Google Partner.
+                        Oui, il est tout à fait possible de demander des exemples de projets graphiques réalisés pour d’autres clients. Cela nous aidera à vous proposer le design qui vous correspondra le mieux, et à vous faire une idée sur la qualité de nos créations ! Par exemple, les cartes de visites d'un chauffagiste ou encore les cartes de visite d'un taxi.
                     </>
                 ),
             },
             {
-                question: "Quels sont les types d’annonces Google Ads ?",
+                question: "Pouvez-vous intégrer des éléments spécifiques dans mes projets graphiques ?",
                 answer: (
                     <>
-                        Google Ads propose de nombreux formats d’annonces, tous adaptés pour des objectifs différents.
-                        <br></br>
-                        <br></br>
-                            • Annonces sur le réseau de recherches : ces annonces apparaissent directement dans les résultats de recherche Google.
-                            <br></br>
-                            • Annonces display : Il s’agit d’encarts publicitaires affichés sur certains sites permettant de mettre en avant des visuels.
-                            <br></br>
-                            • Annonces vidéos : Dans la majorité des cas, il s’agit des publicités sur Youtube.
-                            <br></br>
-                            • Annonces Shopping : annonces spécifiques aux produits avec des images et des prix.
-                        <br></br>
-                        <br></br>
-                        Chez LIADTECH, nous ne proposons que les annonces sur le réseau de recherches (ou annonces textuelles) car ce sont celles qui permettent le meilleur retour sur investissement pour la majorité des professionnels.
+                        Oui, nous pouvons parfaitement intégrer différents éléments spécifiques sur vos créations. Il vous faudra néanmoins veiller à nous les faire parvenir par mail et en bonne qualité pour obtenir le meilleur rendu possible.
                     </>
                 ),
             },
             {
-                question: "Quel est le prix d’une campagne Google Ads ?",
+                question: "Comment se passe le support client après la livraison des fichiers graphiques ?",
+                answer: (
+                <>
+                    Si vous êtes passés par LIADTECH pour la création de vos fichiers graphiques, nous restons à votre disposition même après la livraison, notamment si :
+                    <br></br>
+                    <br></br>
+                        • Vous avez perdu votre création graphique ou souhaitez un autre format.<br></br>
+                        • Vous souhaitez une modification mineure sur votre logo (couleur, typographie, etc.).<br></br>
+                    <br></br>
+                    Pour tout autre type d’accompagnement, vous pourrez contacter directement le graphiste en charge de votre projet.
+                </>
+                ),
+            },
+            {
+                question: "Est-ce que mes visuels seront optimisés pour être compatibles avec tous les supports (impression, web, mobile) ?",
                 answer: (
                     <>
-                        Chez LIADTECH, nos offres démarrent à partir de 149€ HT/mois pour la gestion de vos campagnes Google Ads. Il vous faudra ajouter le budget publicitaire que vous souhaitez allouer qui sera défini avec votre chargé de référencement Google Ads.
-                        <br></br>
-                        <br></br>
-                        Il s’agit du fonctionnement permettant le plus de flexibilité dans la gestion et l’efficacité de vos campagnes Google Ads.
+                        Nous vous livrons différents formats pour optimiser la diffusion de votre support graphique : PNG, JPG, SVG, PDF. En fonction des demandes, nous pouvons vous livrer d’autres types de formats tels que le WebP. Nous vous livrerons le format adapté à l’action que vous souhaitez effectuer.
                     </>
                 ),
             },
             {
-                question: "Peut-on choisir sa cible avec une campagne Google Ads ?",
+                question: "Offrez-vous des services de création de contenu visuel (illustrations, infographies, vidéos) en plus du design graphique ?",
                 answer: (
                     <>
-                        Oui, il est possible de choisir sa cible avec précision sur Google Ads. Vous pouvez définir différents critères pour atteindre l’audience la plus pertinente pour votre activité comme :
-                        <br></br>
-                        <br></br>
-                            • Les mots-clés utilisés par les internautes
-                            <br></br>
-                            • Les données démographiques : âge, sexe, situation géographique
-                            <br></br>
-                            • Centres d’intérêt ou comportements en ligne
-                            <br></br>
-                        Ces options permettent d’affiner votre campagne et de toucher les utilisateurs les plus susceptibles d’être intéressés par votre offre.
-                        <br></br>
-                        <br></br>
-                        Une agence SEA pourra ajuster ces paramètres au mieux pour maximiser l’efficacité de votre campagne.
+                        Non, nous ne proposons pas de services de création de contenus visuels en plus des offres que nous proposons.
+                    </>
+                ),
+            },
+            {
+                question: "Quels outils ou technologies utilisez-vous pour la création de vos designs graphiques ?",
+                answer: (
+                    <>
+                        Pour la création graphique, nos experts utilisent les outils professionnels de la suite Adobe (Photoshop et Illustrator).
+                    </>
+                ),
+            },
+            {
+                question: "Quels sont les avantages de choisir LIADTECH par rapport à d'autres agences de graphisme ?",
+                answer: (
+                    <>
+                        Choisir LIADTECH pour la création de vos supports graphiques permet d’accéder au savoir-faire d’un graphiste professionnel, à votre écoute, qui saura vous conseiller vers la meilleure création possible.
                     </>
                 ),
             },
@@ -397,8 +381,8 @@ export default function Home() {
             <SectionCommunication {...communicationProps}/>
             <SectionResultat {...resultatProps}/>
             <SectionSolutions {...solutionsProps}/>
-            <SectionAvis {...avisProps} />
             <SectionSteps {...stepsProp}/>
+            <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>
