@@ -38,7 +38,7 @@ class FAQ extends Component {
                 
 
                 {/* FAQ */}
-                <div className={`container mx-auto py-8 rounded-[2.5rem] space-y-4 ${this.props.page === 'creation-site-internet' ? "lg:max-w-[60%]" : "lg:max-w-[80%]"}`}>
+                <div className={`container mx-auto py-8 rounded-[2.5rem] space-y-4 ${pagesWithTwoColumns.includes(this.props.page) ? "lg:max-w-[80%]" : "lg:max-w-[60%]"}`}>
                     {/* Opages with 2 cols don't have this question on the top */}
                     {!pagesWithTwoColumns.includes(this.props.page) && (<p className="title text-center mb-10 font-black text-3xl italic">Une question ?</p>) }
 

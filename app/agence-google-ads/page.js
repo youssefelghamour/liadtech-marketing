@@ -95,7 +95,6 @@ export default function Home() {
         p: "Pour vous assurer les meilleurs résultats, un référenceur Aleo prend en charge de A à Z votre campagne.",
     };
 
-
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
         page: 'agence-google-ads',
@@ -194,182 +193,192 @@ export default function Home() {
         ],
     };
 
-
-
-
     const stepsProp = {
         page: 'agence-google-ads',
         pretitle: "Nos experts SEO vous accompagnent de A à Z",
-        title: "Votre stratégie de visibilité en",
-        highlight: "6 étapes ?",
+        title: "Comment ça ",
+        highlight: "marche ?",
         steps: {
             right: [
                 {
                     step: 1,
-                    title: "Audit de préparation",
-                    description:
-                    "Nos équipes sélectionnent les mots-clés les plus pertinents pour votre activité et définissent un plan adapté pour atteindre vos objectifs.",
+                    title: "Étude de votre activité",
+                    description: "Analyse de vos cibles, de votre zone géographique et de votre entreprise.",
                     image: "/step-1.jpg",
                 },
                 {
                     step: 3,
-                    title: "Création de contenu",
-                    description:
-                    "Pour booster vos résultats, nos équipes s’occupent de la rédaction et de la création de pages construites pour optimiser l’efficacité de votre référencement.",
+                    title: "Création de vos campagnes",
+                    description: "Choix des mots-clés et rédaction d’annonces percutantes pour assurer votre visibilité.",
                     image: "/step-3.jpg",
                 },
                 {
                     step: 5,
-                    title: "Maintenance et mises à jour",
-                    description:
-                    "Nous intervenons sur vos contenus pour un site dynamique qui s’adapte aux exigences de Google. Tous les 12 mois, nous rafraîchissons l’intégralité des contenus de votre site internet.",
+                    title: "Étude détaillée des contacts générés par vos campagnes",
+                    description: "Étude des appels, des formulaires mails et des autres moyens mis en place pour obtenir de nouveaux clients.",
                     image: "/step-5.jpg",
                 },
             ],
             left: [
                 {
                     step: 2,
-                    title: "Optimisation de votre site",
-                    description:
-                    "Nos équipes interviennent sur votre site internet pour optimiser son contenu, sa vitesse de chargement et sa structure.",
+                    title: "Préparation de votre page de destination",
+                    description: "Sur votre site ou créée et optimisée par nos soins et adaptée à votre cible pour générer un maximum de contacts.",
                     image: "/step-2.jpg",
                 },
                 {
                     step: 4,
-                    title: "Stratégie de netlinking",
-                    description:
-                    "Nous mettons en place une stratégie de netlinking en choisissant des sites pertinents et en créant des liens de confiance vers votre site internet.",
+                    title: "Gestion et suivi",
+                    description: "Points téléphoniques avec le référenceur dédié à vos campagnes et analyse de vos rapports statistiques.",
                     image: "/step-4.jpg",
-                },
-                {
-                    step: 6,
-                    title: "Suivi et accompagnement",
-                    description:
-                    "Nos équipes vous tiennent informé de chaque action effectuée sur votre site internet, et effectuent avec vous le suivi de vos objectifs.",
-                    image: "/step-6.jpg",
                 },
             ],
         },
-    };
-
-    const testimonialsProps = {
-        pretitle: "Ils ont propulsé leur activité",
-        titleMiddle: true,
-        title: "Des résultats significatifs pour leur ",
-        highlight: "visibilité",
-        items: [
-            {
-                image: "/slide-1.jpg",
-                title: "En première position sur “Couvreur 93”",
-                company: "AMC Couverture",
-                speciality: "Artisan couvreur",
-            },
-            {
-                image: "/slide-2.jpg",
-                title: "1ère position sur “Médecine ésthétique”",
-                company: "CMEG",
-                speciality: "Médecine ésthétique",
-            },
-            {
-                image: "/slide-3.jpg",
-                title: "TOP 3 Google sur son activité",
-                company: "A2 Services",
-                speciality: "Nettoyage et entretien",
-            },
-        ],
     };
 
     const faqProps = {
         page: "agence-google-ads",
         faqs : [
             {
-                question: "Qu’est-ce que le référencement naturel ?",
+                question: "Pourquoi devrais-je confier ma campagne Google ads à une agence ?",
                 answer: (
                     <>
-                        Le référencement naturel, aussi connu sous le nom de SEO, est l'ensemble des techniques visant à améliorer la position de votre site internet dans les résultats de recherche Google. Autrement dit, il s'agit d'optimiser la visibilité de votre site internet de manière organique, sans avoir à recourir à la publicité payante.
+                        En qualité d'agence web experte en Google ads et titulaire de la certification Google Partners, nous déployons notre savoir-faire stratégique et opérationnel dans la gestion de vos campagnes ads.
                         <br />
                         <br />
-                        Le référencement naturel comprend l'optimisation de différents aspects de votre site web, tant au niveau technique que du contenu. Cela inclut l'utilisation de mots-clés pertinents, l'optimisation de la structure du site, l'amélioration de la vitesse de chargement, la création de contenus de qualité et le développement de liens externes organiques.
+                        Notre maîtrise de l'optimisation des conversions publicitaires vous assure une visibilité accrue sur les moteurs de recherche grâce à notre expertise en référencement payant (SEA). Nous ajustons votre campagne publicitaire selon vos objectifs, maximisons le taux de conversion, optimisons le coût par clic (CPC) et nous assurons un suivi rigoureux de vos KPI pour une gestion optimale de votre budget.
                         <br />
                         <br />
-                        L'objectif principal du référencement naturel est d'améliorer la visibilité d'un site web dans les résultats de recherche, ce qui permet d'attirer un trafic qualifié et d'augmenter le nombre de visiteurs. En se classant parmi les premiers résultats pour des mots-clés pertinents, un site a plus de chances d'être visité et de générer du trafic organique.
-                        <br />
-                        <br />
-                        Le référencement naturel est un processus continu qui nécessite une surveillance et une adaptation constantes aux algorithmes des moteurs de recherche. Il peut également prendre du temps pour obtenir des résultats significatifs, car le classement d'un site web dépend de nombreux facteurs et de la concurrence existante sur ces mots-clés.
+                        En nous confiant votre campagne Google ads, vous bénéficiez d'une expertise reconnue et d'un suivi personnalisé par nos consultants SEA afin de garantir l’efficacité de vos campagnes publicitaires.
                     </>
                 ),
             },
             {
-                question: "Pourquoi faire appel à une agence SEO ?",
+                question: "Quelles sont les étapes de la création de ma campagne Google ads avec ALEO ?",
                 answer: (
                     <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre visibilité sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
+                        Chez ALEO, la mise en place de votre campagne ads se fait en trois étapes cruciales. Dans un premier temps, nous nous imprégnons de votre activité, étudions vos points forts et définissons vos objectifs webmarketing pour identifier différentes opportunités de croissance sur Google. Selon vos besoins, nous créons une landing page spécifiquement optimisée pour votre campagne, conçue pour maximiser le taux de conversion et optimiser le coût par clic (CPC).
                         <br />
                         <br />
-                        Assurez-vous également que celle-ci propose un accompagnement et un suivi tout au long de la durée de votre contrat. Les résultats d’une stratégie SEO étant sur le moyen et sur le long terme, il est important que vous puissiez choisir un partenaire de confiance pour avoir le meilleur retour sur investissement possible.
-                    </>
-                ),
-            },
-            {
-                question: "Pourquoi faire appel à une agence SEO ?",
-                answer: (
-                    <>
-                        Faire appel à une agence SEO lorsque l’on est à son compte est essentiel pour améliorer votre visibilité sur les moteurs de recherche. A part si vous êtes expert SEO, une agence SEO comme LIADTECH vous apportera l’expertise nécessaire pour optimiser votre site web, augmenter son trafic et son positionnement sur Google.
+                        Ensuite, nous sélectionnons les mots-clés les plus pertinents pour votre campagne et déployons une stratégie ads robuste en diffusant des annonces textuelles pour afficher votre message publicitaire sur Google. Le tout est géré par nos consultants SEA, assurant le succès de votre campagne. Nous veillons à ce que votre campagne soit le reflet fidèle de votre activité pour atteindre vos objectifs.
                         <br />
                         <br />
-                        Passer par une agence spécialisée pour votre référencement naturel vous permettra d’optimiser vos résultats et d’avoir un meilleur retour sur investissement.
+                        ALEO est à votre service pour faire de votre campagne Google ads une réussite.                        
                     </>
                 ),
             },
             {
-                question: "Combien coûte une agence SEO ?",
+                question: "J'ai déjà un compte Google ads, comment confier mes campagnes SEA à ALEO ?",
                 answer: (
                     <>
-                        Le coût d’une agence SEO varie en fonction de plusieurs facteurs : l’importance de votre projet, la concurrence dans votre secteur, et les services spécifiques dont vous avez besoin. Certaines agences proposent des forfaits horaires et d’autres des tarifs mensuels. Si c’est la première fois que vous souhaitez passer par une agence SEO, nous vous conseillons de vous diriger vers des agences qui proposent des forfaits mensuels comme LIADTECH. Vous pourrez ainsi mieux estimer le retour sur investissement de votre campagne.
+                        Si vous avez déjà un compte Google ads et que vous désirez nous confier la gestion de vos campagnes SEA, le processus est simple. Plutôt que de reprendre vos campagnes existantes, nous préférons en créer de nouvelles pour repartir sur des bases solides et optimisées.
+                        <br />
+                        <br />
+                        En faisant appel à notre agence certifiée Google Partners, vous bénéficiez d'une campagne entièrement adaptée à vos besoins et à vos objectifs. Nos consultants SEA vous offrent un suivi personnalisé, garantissant la réussite de votre nouvelle campagne.                        
                     </>
                 ),
             },
             {
-                question: "Pourquoi faire du référencement naturel ?",
+                question: "Qu'est-ce qu'une agence certifiée Google Partner ?",
                 answer: (
                     <>
-                        Mettre en place une stratégie de référencement naturel (SEO) est essentiel pour augmenter votre visibilité sur les moteurs de recherche comme Google. Une bonne stratégie SEO vous permettra d’attirer un trafic qualifié, d’améliorer le classement de votre site internet sur Google et de renforcer votre image de marque. En optimisant votre contenu et en utilisant des mots-clés pertinents, vous pourrez atteindre votre public cible sans avoir à payer pour des publicités.
+                        Une agence certifiée Google Partner est une entreprise reconnue par Google pour son expertise et sa compétence en gestion de l’outil Google ads. Cette certification atteste de notre capacité à mener avec efficacité des campagnes publicitaires en ligne, tout en respectant les standards de performance fixés par Google.
+                        <br></br>     
                         <br></br>
+                        En tant qu'agence Google Partner, nous avons accès à des formations avancées et à un support technique dédié, nous permettant de rester à la pointe des dernières tendances en marketing digital.
+                        <br></br>     
                         <br></br>
-                        Il est à noter que le référencement naturel est une stratégie à moyen et long terme qui génèrera des résultats durables pour votre entreprise.
+                        Grâce à Google Analytics et Matomo, nous suivons le comportement des visiteurs sur votre site internet et optimisons les pages de destination pour améliorer les conversions. Nous utilisons également les données Analytics pour mesurer le retour sur investissement (ROI) de votre campagne de référencement payant.
+                        <br></br>     
+                        <br></br>
+                        En choisissant notre agence pour votre campagne Google ads, vous faites le choix de l'expertise et de la qualité, pour une stratégie digitale performante et adaptée à vos besoins.
                     </>
                 ),
             },
             {
-                question: "Comment optimiser son référencement naturel ?",
+                question: "C’est quoi l’objectif d’une campagne Google Ads ?",
                 answer: (
                     <>
-                        Un bon référencement naturel repose sur 3 piliers : stratégie de contenu, performances et netlinking. Pour commencer, vous ou votre agence SEO doit effectuer une recherche de mots-clés pertinents pour votre secteur. Il faudra ensuite créer du contenu informatif de qualité intégrant ces mots-clés de manière naturelle.
+                        L’objectif principal d’une campagne Google Ads est d’attirer du trafic qualifié sur votre site et de générer des demandes de contact. Une campagne bien optimisée vous permettra de rendre plus visible vos produits ou services aux yeux de vos prospects. En choisissant des mots-clés pertinents, vous améliorerez votre visibilité sur Google notamment en étant positionné dans les premiers résultats de la SERP.
                         <br></br>
                         <br></br>
-                        Ensuite, vous devez optimiser votre site internet : vitesse de chargement, compatibilité mobile et structure Hn. Enfin, vous ou votre agence SEO doit mettre en place une stratégie de netlinking efficace avec des liens entrants provenant de site réputés afin d’optimiser les résultats de votre stratégie SEO.
-                        <br></br>
-                        <br></br>
-                        Un suivi régulier est indispensable pour pouvoir mettre en place des actions correctives et affirmer votre positionnement.                        
+                        Pour avoir les meilleurs résultats possibles, le mieux est de passer par une agence Google Ads certifiée Google Partner.
                     </>
                 ),
             },
             {
-                question: "Fournissez-vous des rapports de performance SEO réguliers ?",
+                question: "Comment fonctionne une agence SEA ?",
                 answer: (
                     <>
-                        Absolument ! Si vous choisissez LIADTECH pour développer votre site internet professionnel, vous aurez accès à un tableau de performances vous permettant de suivre l'évolution de votre positionnement SEO et l'état de santé de votre site internet.
+                        Une agence SEA est une agence spécialisée dans la gestion des campagnes de publicités payantes sur les moteurs de recherche (particulièrement Google). Elle analyse vos besoins, définit les objectifs de votre campagne et va concevoir et optimiser des annonces pour qu’elles apparaissent au bon moment, au bon endroit et devant la bonne audience.
                         <br></br>
                         <br></br>
-                        De plus, un expert dédié à votre projet sera toujours disponible pour vous accompagner et assurer un suivi optimal de votre projet web. 
+                        Elle effectuera des ajustements réguliers pour vous garantir les meilleures performances en respectant votre budget.
+                        <br></br>
+                        <br></br>
+                        Pour gérer au mieux l’efficacité des campagnes et assurer une meilleure flexibilité, les agences SEA utilisent très souvent le moyen de paiement de leurs clients.
                     </>
                 ),
             },
             {
-                question: "Quel est le délai avant de voir les résultats d’une stratégie SEO ?",
+                question: "Quel budget pour une campagne Google Ads ?",
                 answer: (
                     <>
-                        ALe délai avant de voir des résultats en SEO varie, mais il faut généralement compter entre 3 à 6 mois pour observer des améliorations significatives en termes de référencement Google. Ce délai dépend de plusieurs facteurs : la concurrence dans votre secteur, la qualité de votre contenu, l'état actuel de votre site internet et les efforts d'optimisation SEO mis en place. Le référencement naturel est une stratégie à long terme nécessitant une optimisation continue et des ajustements réguliers pour maintenir et améliorer les résultats en termes de trafic et de visibilité.
+                        Le budget d’une campagne Google Ads varie selon vos objectifs, votre secteur et l’intensité de la concurrence. Votre budget dépendra du Coût par Clic (CPC) des mots clés que vous ciblez.
+                        <br></br>
+                        <br></br>
+                        Pour savoir quels mots-clés cibler et quel budget allouer à votre campagne, le mieux est de faire appel à une agence Google Ads certifiée Google Partner.
+                    </>
+                ),
+            },
+            {
+                question: "Quels sont les types d’annonces Google Ads ?",
+                answer: (
+                    <>
+                        Google Ads propose de nombreux formats d’annonces, tous adaptés pour des objectifs différents.
+                        <br></br>
+                        <br></br>
+                            • Annonces sur le réseau de recherches : ces annonces apparaissent directement dans les résultats de recherche Google.
+                            <br></br>
+                            • Annonces display : Il s’agit d’encarts publicitaires affichés sur certains sites permettant de mettre en avant des visuels.
+                            <br></br>
+                            • Annonces vidéos : Dans la majorité des cas, il s’agit des publicités sur Youtube.
+                            <br></br>
+                            • Annonces Shopping : annonces spécifiques aux produits avec des images et des prix.
+                        <br></br>
+                        <br></br>
+                        Chez ALEO, nous ne proposons que les annonces sur le réseau de recherches (ou annonces textuelles) car ce sont celles qui permettent le meilleur retour sur investissement pour la majorité des professionnels.
+                    </>
+                ),
+            },
+            {
+                question: "Quel est le prix d’une campagne Google Ads ?",
+                answer: (
+                    <>
+                        Chez ALEO, nos offres démarrent à partir de 149€ HT/mois pour la gestion de vos campagnes Google Ads. Il vous faudra ajouter le budget publicitaire que vous souhaitez allouer qui sera défini avec votre chargé de référencement Google Ads.
+                        <br></br>
+                        <br></br>
+                        Il s’agit du fonctionnement permettant le plus de flexibilité dans la gestion et l’efficacité de vos campagnes Google Ads.
+                    </>
+                ),
+            },
+            {
+                question: "Peut-on choisir sa cible avec une campagne Google Ads ?",
+                answer: (
+                    <>
+                        Oui, il est possible de choisir sa cible avec précision sur Google Ads. Vous pouvez définir différents critères pour atteindre l’audience la plus pertinente pour votre activité comme :
+                        <br></br>
+                        <br></br>
+                            • Les mots-clés utilisés par les internautes
+                            <br></br>
+                            • Les données démographiques : âge, sexe, situation géographique
+                            <br></br>
+                            • Centres d’intérêt ou comportements en ligne
+                            <br></br>
+                        Ces options permettent d’affiner votre campagne et de toucher les utilisateurs les plus susceptibles d’être intéressés par votre offre.
+                        <br></br>
+                        <br></br>
+                        Une agence SEA pourra ajuster ces paramètres au mieux pour maximiser l’efficacité de votre campagne.
                     </>
                 ),
             },
@@ -385,9 +394,7 @@ export default function Home() {
             <SectionResultat {...resultatProps}/>
             <SectionSolutions {...solutionsProps}/>
             <SectionAvis {...avisProps} />
-            
             <SectionSteps {...stepsProp}/>
-            <SectionTestimonials {...testimonialsProps}/>
             <SectionFAQ {...faqProps}/>
             <SectionContact />
         </div>

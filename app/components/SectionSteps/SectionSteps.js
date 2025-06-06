@@ -2,7 +2,7 @@
 
 export default function SectionSteps(props) {
     // Pages having only 4 steps: List used to remove the right border from the 4th step
-    const pagesWithFourSteps = ['agence-seo-local', 'agence-google-ads', 'agence-graphisme'];
+    const pagesWithFourSteps = ['agence-seo-local', 'agence-graphisme'];
 
     return (
         // on page referencement-site-internet & agence-seo-local this section has a section above it with the bottom rounded corner so we add this styling to push this section above below it
@@ -73,6 +73,7 @@ export default function SectionSteps(props) {
                                 key={step}
                                 className="lg:min-h-[490px] md:min-h-[400px] min-h-[400px] lg:grid grid-cols-[1fr_2fr] gap-0"
                             >
+                                {/* 1st column: step */}
                                 <div className="lg:flex hidden flex-col justify-between h-full">
                                     <div className="h-full"></div>
 
@@ -84,6 +85,7 @@ export default function SectionSteps(props) {
                                     <div className="h-full"></div>
                                 </div>
 
+                                {/* 2nd column: pic + description */}
                                 <div>
                                     <div
                                         className="relative w-[300px] h-[200px] rounded-xl overflow-hidden bg-center bg-cover"
