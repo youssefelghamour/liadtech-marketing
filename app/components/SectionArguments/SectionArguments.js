@@ -5,13 +5,14 @@ import Title from "../Title/Title";
 
 export default function SectionArguments(props) {    
     // These pages don't have the top left img and the bottom right button
-    const pagesWithoutButtons = ['agence-facebook-ads', 'agence-google-ads'];
+    const pagesWithoutButtons = ['agence-facebook-ads', 'agence-google-ads', 'agence-graphisme'];
+    const pagesWithoutPaddingTop = ['agence-google-ads', 'agence-graphisme'];
 
     return (
         <section className="pt-36 px-5 sm:px-10 md:px-20 lg:px-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
-                <div className={` ${props.page !== 'agence-google-ads' ? '2xl:pt-25' : ''}`}>
+                <div className={` ${pagesWithoutPaddingTop.includes(props.page) ? '' : '2xl:pt-25'}`}>
                     <Title {...props} />
 
                     <ul className={`mt-14 2xl:mr-15 ${props.page !== 'referencement-site-internet' ? '2xl:ml-[120px]' : ''}`}>
@@ -38,7 +39,7 @@ export default function SectionArguments(props) {
                     }
 
                     <picture>
-                        <img src={props.img ? props.img : "/arguments-pic.png"} alt="site Liadtech" className="w-full rounded-xl" />
+                        <img src={props.img ? props.img : "/arguments-pic.png"} alt="site Liadtech" className={`w-full rounded-xl object-cover ${props.page === "agence-graphisme" ? "max-h-[700px]" : ""} `} />
                     </picture>
                     
                     {!pagesWithoutButtons.includes(props.page) && 

@@ -5,11 +5,36 @@ import { FiCalendar } from "react-icons/fi";
 
 class Hero extends Component {
     render() {
-        let imgClassName = this.props.page === 'agence-facebook-ads'
-            ? 'w-full transition-transform duration-500 lg:scale-100 md:scale-110 lg:-mt-60 md:-mt-30 sm:-mt-10 mt-15'
-            : (['referencement-site-internet', 'agence-seo-local', 'agence-google-ads', 'agence-graphisme'].includes(this.props.page)
-                ? "lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]"
-                : "w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10");
+        let imgClassName;
+        let img2ClassName;
+
+        /* agence-google-ads, referencement-site-internet, agence-seo-local, agence-graphisme have the same img className since they have 2 pictures 
+            default imgClassName is for creation-site-internet    
+        */
+        switch (this.props.page) {
+            case 'agence-facebook-ads':
+                imgClassName = 'w-full transition-transform duration-500 lg:scale-100 md:scale-110 lg:-mt-60 md:-mt-30 sm:-mt-10 mt-15';
+                break;
+
+            case 'referencement-site-internet':
+            case 'agence-seo-local':
+                imgClassName = 'lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]';
+                img2ClassName = "lg:block hidden lg:absolute bottom-0 right-1/2 lg:-right-12 w-full md:w-auto lg:w-[32vw] z-[0]";
+                break;
+
+            case 'agence-graphisme':
+                imgClassName = 'lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]';
+                img2ClassName = "lg:block hidden lg:absolute bottom-0 right-0 w-full md:w-auto lg:w-[50vw] z-[0]";
+                break;
+            
+            case 'agence-google-ads':
+                img2ClassName = "lg:block hidden lg:absolute bottom-0 right-1/2 lg:right-15 w-full md:w-auto lg:w-[22vw] z-[0]";  // smaller pic width
+                imgClassName = 'lg:absolute bottom-0 left-1/2 lg:-left-12 w-full md:w-auto lg:w-[32vw] z-[0]';
+                break;
+
+            default:
+                imgClassName = 'w-full mt-24 transition-transform duration-500 lg:scale-100 md:scale-110 scale-184 md:-translate-y-0 -translate-y-10';
+        }
 
         return (
             <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${['referencement-site-internet', 'agence-seo-local', 'agence-google-ads', 'agence-graphisme'].includes(this.props.page) ? 'lg:pb-[289px]' : ''} `}>
@@ -50,7 +75,7 @@ class Hero extends Component {
                 {/* Not all pages have the second image */}
                 {this.props.img2 && 
                     <picture className="w-full">
-                        <img src={this.props.img2} alt="hero-pic" className="lg:block hidden lg:absolute bottom-0 right-1/2 lg:-right-12 w-full md:w-auto lg:w-[32vw] z-[0]"></img>
+                        <img src={this.props.img2} alt="hero-pic" className={img2ClassName}></img>
                     </picture>
                 }
                 

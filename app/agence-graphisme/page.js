@@ -13,119 +13,123 @@ import SectionContact from "../components/SectionContact/SectionContact";
 import SectionAvis from "../components/SectionAvis/SectionAvis";
 import { MdLoop } from "react-icons/md";
 import { SlTarget } from "react-icons/sl";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+import { PiPalette } from "react-icons/pi";
+
+
 
 
 
 
 export const metadata = {
-    title: "Agence Google Ads | LIADTECH",
+    title: "Agence de graphisme | LIADTECH",
 };
 
 export default function Home() {
     const heroProps = {
-        page: 'agence-google-ads',
-        img: `/hero-pic-6.png`,
-        img2: '/hero-pic-9.png',
-        pretitle: "Agence de référencement Google Ads",
-        title: "Obtenez un ",
-        highlight: "maximum",
-        title2: " de contacts grâce à la publicité Google",
-        p: "Lancez des campagnes publicitaires ciblées avec un budget maîtrisé pour générer plus de ventes.",
-        button: "Découvrir nos offres",
+        page: 'agence-graphisme',
+        img: `/hero-pic-8.png`,
+        img2: '/hero-pic-7.png',
+        pretitle: "Studio graphique | Agence de graphisme",
+        title: "Un logo ",
+        highlight: "percutant",
+        title2: " pour rassurer ses clients",
+        p: "Unique et impactant, un logo pro vous permet de vous différencier et de marquer les esprits de vos clients.",
+        button: "Recevoir nos offres",
     };
 
     const argumentsProps = {
-        page: 'agence-google-ads',
-        pretitle: 'Une agence Google Partner proche de vous',
+        page: 'agence-graphisme',
+        pretitle: 'Une Identité visuelle unique avec l’agence de graphisme LIADTECH',
         title: "Visez le ",
         highlight: "top",
         title2: " des recherches Google",
-        img: "/arguments-pic-2.png",
+        img: "/arguments-pic-3.png",
         items: [
             {
-                icon: SlTarget,
-                title: "Opportunités",
-                description: "Tirez profit de tout le potentiel de la publicité en ligne.",
+                icon: HiOutlinePaintBrush,
+                title: "Un logo personnalisé",
+                description: "Obtenez un logo 100% personnalisé adapté à votre activité.",
             },
             {
                 icon: PiCertificateLight,
-                title: "Savoir-faire",
-                description: "Bénéficiez des compétences de nos experts en référencement.",
+                title: "Un graphiste dédié",
+                description: "Bénéficiez du savoir-faire et de la créativité d'un graphiste dédié.",
             },
             {
-                icon: MdLoop,
-                title: "Retour sur investissement",
-                description: "Générez des résultats rapides à la hauteur de vos ambitions.",
+                icon: PiPalette,
+                title: "Une identité de marque cohérente",
+                description: "Construisez une identité visuelle cohérente sur l'ensemble de vos supports.",
             },
         ],
         button: "Recevoir nos tarifs",
     };
 
     const communicationProps = {
-        page: 'agence-google-ads',
-        pretitle: "Le référencement naturel ça fonctionne comment ?",
-        title: "Comment rendre son site internet visible sur",
-        highlight: "Google",
+        page: 'agence-goraphisme',
+        pretitle: "Une identité visuelle, pourquoi ?",
+        title: "Votre entreprise ",
+        highlight: "mérite",
+        title2: " un logo unique",
         titleMiddle: true,
         items: [
             {
-                img: '/communication-pic-7.png',
-                title: "Plus de trafic de qualité",
-                description: "Attirez sur votre site de futurs clients intéressés par votre offre.",
+                img: '/communication-pic-10.png',
+                title: "Renforcez l’image de votre entreprise",
+                description: "Marquez vos clients et devenez reconnaissable au premier coup d'oeil.",
             },
             {
-                img: '/communication-pic-8.png',
-                title: "Plus de contacts",
-                description: "Générez un maximum de demandes de devis grâce à la publicité en ligne.",
+                img: '/communication-pic-12.png',
+                title: "Rassurez et fidélisez vos clients",
+                description: "Communiquez avec une image professionnelle et moderne.",
             },
             {
-                img: '/communication-pic-9.png',
-                title: "Plus de chiffres d'affaires",
-                description: "Augmentez vos ventes en étant la première entreprise que vos clients voient sur Google.",
+                img: '/communication-pic-11.png',
+                title: "Démarquez-vous de vos concurrents",
+                description: "Sortez du lot grâce à une identité unique qui fera la différence.",
             },
         ],
     };
 
     const resultatProps = {
-        page: 'agence-google-ads',
-        pretitle: "Des campagnes gérées par des experts SEA",
-        title: "Un ",
-        highlight: "expert",
-        title2: " en référencement dédié à votre projet",
-        p: "Pour vous assurer les meilleurs résultats, un référenceur LIADTECH prend en charge de A à Z votre campagne.",
+        page: 'agence-graphisme',
+        pretitle: "L’agence de création de logos et de visuels des pros",
+        title: "Une logo ",
+        highlight: "pro",
+        title2: " ? Un graphiste",
+        highlight2: "pro",
+        p: "Un graphiste s'occupe pour vous de la création de votre logo. Vous avez une idée ? On la concrétise !",
+        msg: "“Je crée des logos uniques et mémorables”",
     };
 
     // prixProps: Solutions section includes the price section
     const solutionsProps = {
-        page: 'agence-google-ads',
+        page: 'agence-graphisme',
         titleMiddle: true,
-        pretitle: "Le référencement payant accessible à tous les pros",
-        title: "Pour chaque objectif, une ",
-        highlight: "solution ",
-        title2: 'LIADTECH',
-        p: "Avec LIADTECH, votre budget publicitaire est inclus dans votre offre. Mettez le cap sur votre visibilité avec une solution publicitaire clé en main !",
-        img: '/solutions-pic-1.png',
+        pretitle: "Pourquoi faire appel à LIADTECH pour son identité visuelle ?",
+        title: "LIADTech vous propose une solution ",
+        highlight: "clé en main ",
+        p: "Quels que soient vos besoins, on a une solution LIADTECH !",
+        img: '/solutions-pic-2.png',
         items: [
             {
-                title: "Accompagnement complet avec un expert dédié",
-                description: "Pour un suivi sur-mesure et personnalisé dédié à votre activité.",
+                title: "Prise de brief par un graphiste dédié",
+                description: "Afin de créer un logo qui vous corresponde, définissez vos attentes et vos objectifs avec un expert LIADTECH.",
             },
             {
-                title: "Choix des meilleurs mots-clés en fonction de votre activité",
-                description: "Pour garantir le meilleur retour sur investissement, nous définissons les mots-clés les mieux adaptés.",
+                title: "Création graphique",
+                description: "Votre graphiste dédié vous proposera différentes pistes créatives pour que vous puissiez choisir celle qui vous convient le plus.",
             },
             {
-                title: "Création de campagnes et annonces percutantes",
-                description: "Pour être dans les meilleurs résultats Google rapidement.",
-            },
-            {
-                title: "Suivi de vos campagnes en temps réel",
-                description: "Mesurez l'efficacité de vos campagnes facilement et rapidement avec notre outil de suivi.",
+                title: "Retouches et livraison",
+                description: "Nous vous envoyons différentes propositions de logo et effectuons des retouches afin qu’il soit conforme à vos attentes.",
             },
         ],
         prixProps: {
-            page: 'agence-google-ads',
-            price: 149,
+            page: 'agence-graphisme',
+            p1: "Votre logo pro pour",
+            p: "Marquez les esprits de vos clients dès maintenant.",
+            price: 400,
         },
     };
 

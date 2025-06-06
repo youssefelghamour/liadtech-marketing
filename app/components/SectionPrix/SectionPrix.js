@@ -19,7 +19,9 @@ export default function SectionPrix(props) {
                 <div className={`${pagesWithPadding.includes(props.page) ? "py-30" : "py-15"}  relative overflow-hidden min-h-30 flex flex-col items-center justify-center p-10 text-center`}>
                     
                     {/* agence-seo-local page doesn't have this */}
-                    {props.page !== "agence-seo-local" && <p className="font-medium  z-[1]">À partir de</p>}
+                    {props.page !== "agence-seo-local" &&
+                        (props.p1 ? props.p1 : <p className="font-medium  z-[1]">À partir de</p>)
+                    }
 
                     <div className="flex justify-center items-end gap-1 mt-4 text-[var(--purple)]  z-[1]">
                         <p className="text-[115px] font-black font-clash leading-[70%] tracking-tighter">{props.price}€</p>
