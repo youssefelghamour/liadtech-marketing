@@ -6,7 +6,7 @@ export default function SectionSteps(props) {
 
     return (
         // on page referencement-site-internet & agence-seo-local this section has a section above it with the bottom rounded corner so we add this styling to push this section above below it
-        <section className={`pt-25 bg-[var(--light-blue)] mt-20 px-5 sm:px-10 md:px-20
+        <section id="steps" className={`pt-25 bg-[var(--light-blue)] mt-20 px-5 sm:px-10 md:px-20
                         ${['referencement-site-internet', 'agence-seo-local'].includes(props.page) ? 'mt-[-60px] lg:mt-[-120px] lg:pt-56 lg:pb-10 rounded-b-[60px] md:rounded-b-[80px] lg:rounded-b-[100px]' : ''}
                     `}
         >

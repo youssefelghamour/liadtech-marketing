@@ -5,7 +5,7 @@ import Title from "../Title/Title";
 
 export default function SectionSolutions(props) {
     return (
-        <section className={` items-center text-center px-5 sm:px-10 md:px-20 ${props.page === 'agence-google-ads' ? 'mt-5' : 'mt-36'}`}>
+        <section id="solutions" className={` items-center text-center px-5 sm:px-10 md:px-20 ${props.page === 'agence-google-ads' ? 'mt-5' : 'mt-36'}`}>
             <Title {...props} />
 
             {/* Second Section PRICING */}

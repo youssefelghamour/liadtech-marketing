@@ -99,7 +99,7 @@ class Reviews extends Component {
 
         return (
             // -mx-5 sm:-mx-10 md:-mx-20: margins were added to counter the parent’s padding px-5 sm:px-10 md:px-20 to remove space from the sides
-            <section className="relative overflow-x-hidden py-10 px-5 -mx-5 sm:-mx-10 md:-mx-20">
+            <section id="reviews" className="relative overflow-x-hidden py-10 px-5 -mx-5 sm:-mx-10 md:-mx-20">
                 <div className="relative flex justify-center items-center gap-6 lg:w-[3000px] left-1/2 -translate-x-1/2">
                     {/* Side cards shown only on large screens */}
                     <div className="hidden lg:block">

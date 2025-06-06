@@ -326,9 +326,9 @@ export default function Home() {
             <Hero {...heroProps}/>
             <SectionArguments {...argumentsProps}/>
             <SectionCommunication {...communicationProps}/>
-            <SectionResultat {...resultatProps2}/>
+            <SectionResultat {...resultatProps2} id="resultat-a"/>
             <SectionSolutions {...solutionsProps}/>
-            <SectionResultat {...resultatProps}/>
+            <SectionResultat {...resultatProps} id="resultat-b"/>
             <SectionAvis {...avisProps} />
             <SectionFAQ {...faqProps}/>
             <SectionContact />

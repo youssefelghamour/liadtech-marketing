@@ -10,7 +10,7 @@ export default function SectionPrix(props) {
     const pagesWithPadding = ["agence-facebook-ads", "creation-site-internet", "referencement-site-internet"];
 
     return (
-        <section className={`${props.page === "agence-seo-local" ? "relative bg-white lg:pb-25 border border-white lg:rounded-b-[100px] -mb-20 z-[100]" : ""}`}>
+        <section id="prix" className={`${props.page === "agence-seo-local" ? "relative bg-white lg:pb-25 border border-white lg:rounded-b-[100px] -mb-20 z-[100]" : ""}`}>
             <div className={`${props.page === "agence-seo-local" ? "lg:grid lg:grid-cols-1 lg:grid-cols-2" : ""} relative overflow-hidden bg-[var(--light-blue)] border-[1px] border-[var(--light-blue-border)] lg:w-[85%] rounded-lg mx-auto mt-12`}>
                 {/* Background image */}
                 <div className="absolute left-0 top-0 bg-[url('/faq-bg.png')] [filter:brightness(1.7)] bg-no-repeat bg-contain opacity-30 w-[1400px] h-[1400px]" />

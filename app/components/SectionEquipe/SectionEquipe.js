@@ -4,7 +4,7 @@ import Title from "../Title/Title";
 
 export default function SectionEquipe(props) {
     return (
-        <section className="grid lg:grid-cols-2 mt-36 px-5 sm:px-10 md:px-20">
+        <section id="equipe" className="grid lg:grid-cols-2 mt-36 px-5 sm:px-10 md:px-20">
             <div>
                 <Title {...props} />
 

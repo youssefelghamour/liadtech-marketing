@@ -37,7 +37,7 @@ class Hero extends Component {
         }
 
         return (
-            <section className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${['referencement-site-internet', 'agence-seo-local', 'agence-google-ads', 'agence-graphisme'].includes(this.props.page) ? 'lg:pb-[289px]' : ''} `}>
+            <section id="hero" className={`section-hero w-[98%] mx-auto bg-[var(--background)] pt-[170px] lg:pt-[220px] relative overflow-hidden rounded-b-2xl ${['referencement-site-internet', 'agence-seo-local', 'agence-google-ads', 'agence-graphisme'].includes(this.props.page) ? 'lg:pb-[289px]' : ''} `}>
                 <div className="px-4 relative z-[1]">
                     <h1 className="text-[2vw] md:text-[1.6vw] lg:text-[1.15vw] 2xl:text-[0.9vw] lg:text-center uppercase text-[var(--purple)] z-[1] font-extrabold mb-4">
                         {this.props.pretitle}

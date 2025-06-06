@@ -9,7 +9,7 @@ export default function SectionArguments(props) {
     const pagesWithoutPaddingTop = ['agence-google-ads', 'agence-graphisme'];
 
     return (
-        <section className="pt-36 px-5 sm:px-10 md:px-20 lg:px-[80px]">
+        <section id="arguments" className="pt-36 px-5 sm:px-10 md:px-20 lg:px-[80px]">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left column */}
                 <div className={` ${pagesWithoutPaddingTop.includes(props.page) ? '' : '2xl:pt-25'}`}>

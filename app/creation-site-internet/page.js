@@ -96,6 +96,7 @@ export default function Home() {
         title: "Pour chaque objectif, une solution",
         highlight: "LIADTECH",
         p: "Quels que soient vos besoins, nous concevons le site internet qu’il vous faut.",
+        img: "/solutions-pic-3.png",
         items: [
             {
                 title: "Création graphique et rédaction des contenus",

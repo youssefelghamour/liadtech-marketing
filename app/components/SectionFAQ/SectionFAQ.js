@@ -13,7 +13,7 @@ class FAQ extends Component {
         const pagesWithTwoColumns = ['agence-facebook-ads', 'referencement-site-internet'];
 
         return (
-            <section className={`relative overflow-hidden bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem] ${pagesWithTwoColumns.includes(this.props.page) ? "grid lg:grid-cols-[1fr_1.5fr]" : ""}`}>
+            <section id="faq" className={`relative overflow-hidden bg-[var(--purple-light-3)] mt-20 py-8 mx-4 max-w-[90%] mx-auto px-15 rounded-[2.5rem] ${pagesWithTwoColumns.includes(this.props.page) ? "grid lg:grid-cols-[1fr_1.5fr]" : ""}`}>
                 
                 {/* Adding the left column that contains the question + image on pages with 2 columns */}
                 {pagesWithTwoColumns.includes(this.props.page)

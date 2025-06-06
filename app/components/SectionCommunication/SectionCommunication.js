@@ -6,7 +6,7 @@ export default function SectionCommunication(props) {
     <section className="mt-36 px-5 sm:px-10 md:px-20">
         <TitleMiddle {...props} />
 
-        <div className="grid lg:grid-cols-3 gap-10 mt-16">
+        <div id="communication" className="grid lg:grid-cols-3 gap-10 mt-16">
             {props.items && props.items.map((item, index) => (
                 <div key={index} className="p-12 bg-[var(--purple-light-2)] rounded-lg">
                     <img src={item.img} alt={`Communication pic ${index + 1}`} className="w-28 h-28 mb-4" />

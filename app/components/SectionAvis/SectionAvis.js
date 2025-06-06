@@ -10,7 +10,7 @@ import { FcGoogle } from "react-icons/fc";
 class SectionAvis extends Component {
     render() {
         return (
-            <section className={`pt-28 justify-center items-center text-center pb-30 px-5 sm:px-10 md:px-20 bg-[var(--testimonials-bg-color)]
+            <section id="avis" className={`pt-28 justify-center items-center text-center pb-30 px-5 sm:px-10 md:px-20 bg-[var(--testimonials-bg-color)]
                             ${this.props.page === 'creation-site-internet' || this.props.page === 'agence-google-ads' ? '-mb-20 mt-15' : ''} 
                             ${this.props.page === 'agence-seo-local' ? 'pt-40 relative lg:pb-25 border border-[var(--testimonials-bg-color)] rounded-b-[60px] md:rounded-b-[80px] lg:rounded-b-[100px] -mb-20 z-[99]' : ''}
                             ${this.props.page === 'agence-graphisme' ? 'mt-0' : ''}

@@ -86,6 +86,7 @@ export default function Home() {
         title: "Notre plan pour vous placer au",
         highlight: "top",
         p: "Nous intervenons sur tous les aspects du référencement naturel pour vous emmener au sommet !",
+        img: "/solutions-pic-3.png",
         items: [
             {
                 title: "Rédaction de pages optimisées pour le SEO",
